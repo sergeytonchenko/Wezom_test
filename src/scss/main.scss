@@ -1,6 +1,6 @@
 @import "parsials/mixins";
 @import "parsials/params";
-@import "nav"
+@import "nav";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 html, body {
@@ -20,5 +20,11 @@ a {
 .view-port {
     max-width: 1360px;
     margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 

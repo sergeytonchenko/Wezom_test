@@ -29,10 +29,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style.css'
         }),
-        new CopyWebpackPlugin([
-          { from: PATHS.src + '/img', to: `img` },
-          { from: PATHS.src + '/static' },
-        ])        
+        new CopyWebpackPlugin({
+          patterns: [
+            { from: './src/img', to: './img' },            
+          ]
+        })                  
     ],
     module: {
         rules: [

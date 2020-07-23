@@ -1,7 +1,7 @@
 {
-  "name": "web",
+  "name": "wezom",
   "version": "1.0.0",
-  "description": "wezom test",
+  "description": "webpack project",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -45,5 +45,13 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
     "jquery": "^3.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeytonchenko/Wezom_test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergeytonchenko/Wezom_test/issues"
+  },
+  "homepage": "https://github.com/sergeytonchenko/Wezom_test#readme"
 }

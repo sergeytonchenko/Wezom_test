@@ -1,15 +1,19 @@
+nav {
+    background-color: #696969;
+}
+
 .nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    
 
     &__menu {
         @include clear-list;
         display: flex;
         //flex: 0 0 50px;
-        height: 50px;
-        background-color: #696969;
+        height: 50px;        
     };
 
     &__item {
@@ -43,5 +47,14 @@
         background-color: #ffc925;
         opacity: 0;
         transition: 0.5 opacity;
+    }
+
+    &__button {
+        background-color: #ff8900;
+        text-transform: uppercase;
+        border: none;
+        font-size: 12px;
+	    text-transform: uppercase;
+	    color: #fff;
     }
 }

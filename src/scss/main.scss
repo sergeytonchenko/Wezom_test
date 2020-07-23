@@ -1,0 +1,24 @@
+@import "parsials/mixins";
+@import "parsials/params";
+@import "nav"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+html, body {
+    @include clear;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    @include clear;
+}
+
+a {
+    text-decoration: none;
+}
+
+.view-port {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+

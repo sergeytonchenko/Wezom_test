@@ -6,19 +6,21 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
 
     &__menu {
         @include clear-list;
-        display: flex;
-        //flex: 0 0 50px;
+        display: flex;        
         height: 50px;        
     };
 
     &__item {
         position: relative;
-        margin: 0 10px;
+        margin: 14px 18px 0;
+
+        &:nth-child(1) {
+          margin-left: 2px;  
+        }
         
         
         &:hover { 
@@ -27,8 +29,7 @@ nav {
             }
             .nav__link {
                 color: #fff;
-            }
-            
+            }            
         }
     }
 
@@ -50,11 +51,21 @@ nav {
     }
 
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
         background-color: #ff8900;
         text-transform: uppercase;
         border: none;
         font-size: 12px;
-	    text-transform: uppercase;
-	    color: #fff;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        color: #fff;
+        height: 50px;
+        width: 124px; 
+    }
+
+    &__icon {
+        margin-right: 10px;
     }
 }

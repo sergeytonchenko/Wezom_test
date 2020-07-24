@@ -1,0 +1,49 @@
+.filterContent {
+
+    &__tabs {
+        display: flex;
+        width: 281px;
+        height: 44px;
+        border: 3px solid #efefef;
+        background-color: #efefef;
+    }
+
+    #checkbox {
+        display: none;
+
+    }
+            :checked + label {
+                left: 0px;
+                background: #efefef;                             
+              }
+              
+              :checked + label:after {
+                left: 50px;
+                background: #ff8900;
+                content: "Tab2";                
+              }
+
+    &__tabs-btn { 
+        display: block;
+        content: "Tab1";
+        left: 0px;
+        top: 0;
+        position: relative;      
+        z-index: 10; 
+        width: 50px;
+        color: #696969;
+        font-size: 14px;
+        background-color: #ff8900;
+             
+        &:after {
+            content: "Tab2";
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            left: 50px;
+            top: 0px;
+            display: block;
+            background: #efefef;
+        }
+    }
+}

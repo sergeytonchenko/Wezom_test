@@ -1,0 +1,134 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+
+    &__block {
+        width: 25%;
+        border: 1px solid #dbdbdb;
+    }
+
+    &__mark {
+        @include clear;
+        margin: 20px 0 0 8px;
+        width: 79px;
+	    height: 22px;
+        background-color: #f2f2f2;
+        font-size: 14px;
+        color: #848484;
+        
+        &:hover {
+            background-color: #a5a5a5;
+            color: #fdf7f7;  
+        }
+    }
+
+    &__title {
+        margin: 15px 0 0 8px;   
+        font-size: 17px;
+	    text-decoration: underline;
+        color: #3b3b3b;        
+        line-height: 26px;
+        font-weight: 400; 
+    }
+
+    &__subtitle {
+        display: flex;
+        margin: 9px 0 0 11px;
+    }
+
+    &__rating {
+        direction: rtl;
+        text-align: left;
+
+        & label {
+            color: #a4a4a4;
+            font-size: 13px;
+            margin-right: 1px;
+        }
+        
+        & input:checked+label {
+            color: #ff8600;
+        }
+        
+        & input:checked+label~label {
+            color: #ff8600;
+        }
+        
+        & input+label:hover {
+            color: #ff8600 !important;
+        }
+        
+        & input+label:hover~label {
+            color: #ff8600;
+            ;
+        }
+        
+        [type="radio"] {
+            display: none;
+        }
+    }
+
+    &__review {
+        font-size: 13px;
+	    text-decoration: underline;
+        color: #9b9b9b;
+        margin: 3px 0 0 11px;        
+    }
+
+    &__stock {
+        font-size: 12px;
+        color: #757575;
+        margin: 4px 0 0 31px;
+    }
+    
+
+    &__content {
+        display: flex;
+    }
+
+    &__pictogram {
+        display: flex;
+        flex-direction: column;        
+        margin: 21px 31px 0 7px;
+
+        object {
+            margin-bottom: 37px;
+        }
+    }
+
+    &__picture {
+        margin-top: 24px;
+    }
+
+    &__ad {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__ad-icon {
+        display: flex;
+        position: relative;
+
+        span {
+            position: absolute;
+            width: 100%;
+            top: 25%;
+            left: 0;
+            text-align: center;
+        };
+    }
+
+    &__ad-picture {
+       
+        
+    }
+
+    &__ad-text {        
+        font-size: 10px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    color: #fff;
+    }
+
+
+}

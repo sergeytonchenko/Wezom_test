@@ -3,6 +3,9 @@
 @import "nav";
 @import "header";
 @import "block";
+@import "filter-content";
+@import "middle";
+@import "product";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 html, body {
@@ -11,8 +14,19 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, input, select {
     @include clear;
+
+    :active {
+        @include clear;
+    }
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+    cursor: pointer;
 }
 
 a {

@@ -1,1 +1,601 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wezom test</title><link href="style.css" rel="stylesheet"></head><body><div class="wrapper"><nav><div class="nav view-port"><ul class="nav__menu"><li class="nav__item"><a href="#" class="nav__link">Главная <span class="nav__menu-border"></span></a></li><li class="nav__item"><a href="#" class="nav__link">О компании <span class="nav__menu-border"></span></a></li><li class="nav__item"><a href="#" class="nav__link">Ссылка 1 <span class="nav__menu-border"></span></a></li><li class="nav__item"><a href="#" class="nav__link">Ссылка 2 <span class="nav__menu-border"></span></a></li><li class="nav__item"><a href="#" class="nav__link">Ссылка 3 <span class="nav__menu-border"></span></a></li></ul><button class="nav__button"><img class="nav__icon" src="/img/nav__man.png" alt="nav__man"> Вход</button></div></nav><section><div class="header view-port"><div class="header__logo"><img src="./img/header__logo.png" alt="header__logo"></div><div class="header__call"><a href="#" class="header__phone">+380 98 170 00 740</a> <a href="#" class="header__phone">+380 98 170 00 740</a> <button class="header__button"><img class="header__icon" src="/img/header__phone.png" alt="header__phone"> Перезвонить мне</button></div><div class="header__actions"><div class="header__action"><span></span> <object type="image/svg+xml" data="./img/action_compare.svg"></object><p class="header__text">Сравнение</p></div><div class="header__action"><span></span> <object type="image/svg+xml" data="./img/action_favorites.svg"></object><p class="header__text">Избранное</p></div><div class="header__action"><span></span> <object type="image/svg+xml" data="./img/action_basket.svg"></object><p class="header__text">Корзина</p></div></div></div></section><section><div class="block view-port"><div class="block__menu"><div class="block__menu--hat"><div class="block__menu--burger"><object type="image/svg+xml" data="./img/burger.svg"></object></div><div class="block__menu--header"><p>Меню</p></div></div><div class="block__menu--list"><ul><li class="block_menu--item">Ссылка 1</li><li class="block_menu--item">Ссылка 2</li><li class="block_menu--item">Ссылка 3</li><li class="block_menu--item">Ссылка 4</li><li class="block_menu--item">Ссылка 5</li><li class="block_menu--item">Ссылка 6</li><li class="block_menu--item">Ссылка 7</li></ul></div></div><div class="block__main"><div class="block__search"><form action="#" method="post"><input id="name" name="search" class="block__search--input" placeholder="Поиск по сайту"> <select name="select" class="block__search--select"><option value="Все категории" selected="selected">Все категории</option><option value="Ссылка 1">Ссылка 1</option><option value="Ссылка 2">Ссылка 2</option><option value="Ссылка 2">Ссылка 3</option></select> <button type="submit">Поиск</button></form></div><div class="block__filter"></div></div></div></section></div><script src="index.js"></script><script src="bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wezom test</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav view-port">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Главная
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            О компании
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 1
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 2
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 3
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                </ul>                
+                <button class="nav__button">
+                    <img class="nav__icon" src="/img/nav__man.png" alt="nav__man">            
+                    Вход</button>                
+            </div>
+        </nav>
+        <section>
+            <div class="header view-port">
+                <div class="header__logo">
+                    <img src="./img/header__logo.png" alt="header__logo">
+                </div>
+                <div class="header__call">
+                    <a href="#" class="header__phone">+380 98 170 00 740</a>
+                    <a href="#" class="header__phone">+380 98 170 00 740</a>
+                    <button class="header__button">                        
+                        <img class="header__icon" src="/img/header__phone.png" alt="header__phone">             
+                        Перезвонить мне</button>
+                </div>
+                <div class="header__actions">
+                    <div class="header__action">
+                        <span></span>
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/action_compare.svg">
+                        </object>
+                        <p class="header__text">Сравнение</p>
+                    </div>
+                    <div class="header__action">
+                        <span></span>
+                        <object type="image/svg+xml" data="./img/action_favorites.svg"></object>
+                        <p class="header__text">Избранное</p>
+                    </div>
+                    <div class="header__action">
+                        <span></span>
+                        <object type="image/svg+xml" data="./img/action_basket.svg"></object>
+                        <p class="header__text">Корзина</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="block view-port">
+                <div class="block__menu">
+                    <div class="block__menu--hat">
+                        <div class="block__menu--burger">
+                            <object type="image/svg+xml" data="./img/burger.svg"></object>    
+                        </div>
+                        <div class="block__menu--header">
+                            <p>Меню</p>    
+                        </div>
+                    </div>
+                    <div class="block__menu--list">
+                        <ul>
+                            <li class="block_menu--item">Ссылка 1</li>
+                            <li class="block_menu--item">Ссылка 2</li>
+                            <li class="block_menu--item">Ссылка 3</li>
+                            <li class="block_menu--item">Ссылка 4</li>
+                            <li class="block_menu--item">Ссылка 5</li>
+                            <li class="block_menu--item">Ссылка 6</li>
+                            <li class="block_menu--item">Ссылка 7</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="block__main">
+                    <div class="block__search">
+                        <form action="#" method="post">
+                            <input type="text" id="name" name="search"
+                            class="block__search--input" placeholder="Поиск по сайту">
+                            <select name="select" class="block__search--select">
+                               <option value="Все категории" selected>Все категории</option> 
+                               <option value="Ссылка 1">Ссылка 1</option>
+                               <option value="Ссылка 2">Ссылка 2</option>
+                               <option value="Ссылка 2">Ссылка 3</option>
+                            </select>
+                            <button type="submit">Поиск</button>
+
+                        </form>
+
+                    </div>
+                    <div class="block__filter">                        
+                        <ul class="block__filterNav filterNav">
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon" 
+                                      type="image/svg+xml"
+                                      data="./img/filter__img1.svg">
+                                    </object>
+                                    Ссылка 1
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img2.svg">
+                                    </object>
+                                    Ссылка 2
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img3.svg">
+                                    </object>
+                                    Ссылка 3
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img4.svg">
+                                    </object>
+                                    Ссылка 4
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img5.svg">
+                                    </object>
+                                    Ссылка 5
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>                                
+                        </ul>
+                        <form action="" class="block__filterContent filterContent">                            
+                            <div class="filterContent__tabs">
+                                <input type="checkbox" id="checkbox" checked>
+                                <label for="checkbox" class="filterContent__tabs-btn">Tab1</label>
+                                </div>
+
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="middle view-port">
+
+            </div>
+        </section>
+        <section>
+            <div class="product view-port">
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input checked type="radio" name="rate" id="r5">
+                            <label for="r5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4">
+                            <label for="r4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3">
+                            <label for="r3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2">
+                            <label for="r2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1">
+                            <label for="r1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-1.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon2.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Хит</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon3.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Скидка</p>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2>                        
+                        <p class="product__price-old">1250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <button class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <a href="#" class="product__trade-compare-link">
+                                Сравнить товар
+                            </a>    
+                        </button>
+                        <button class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>
+                            <a href="#" class="product__trade-wish-link">
+                                В избранное
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input type="radio" name="rate" id="r5">
+                            <label for="r5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4">
+                            <label for="r4"><i class="fas fa-star"></i></label>
+                            <input checked type="radio" name="rate" id="r3">
+                            <label for="r3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2">
+                            <label for="r2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1">
+                            <label for="r1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>                            
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-2.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon2.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Хит</p>
+                            </span>
+                        </div>                        
+                    </div> 
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2> 
+                        <p class="product__price-old">1250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <button class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <a href="#" class="product__trade-compare-link">
+                                Сравнить товар
+                            </a>    
+                        </button>
+                        <button class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>
+                            <a href="#" class="product__trade-wish-link">
+                                В избранное
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input checked type="radio" name="rate" id="r5">
+                            <label for="r5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4">
+                            <label for="r4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3">
+                            <label for="r3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2">
+                            <label for="r2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1">
+                            <label for="r1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Без отзывов</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-3.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>                         
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2> 
+                        <p class="product__price-old">11 250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <button class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <a href="#" class="product__trade-compare-link">
+                                Сравнить товар
+                            </a>    
+                        </button>
+                        <button class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>
+                            <a href="#" class="product__trade-wish-link">
+                                В избранное
+                            </a>
+                        </button>
+                    </div> 
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br /> <br />                        
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input checked type="radio" name="rate" id="r5">
+                            <label for="r5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4">
+                            <label for="r4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3">
+                            <label for="r3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2">
+                            <label for="r2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1">
+                            <label for="r1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>  
+                        </div>
+                        <img src="./img/product_photo-4.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div style="visibility: hidden;" class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>                         
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2>
+                                                
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <button class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <a href="#" class="product__trade-compare-link">
+                                Сравнить товар
+                            </a>    
+                        </button>
+                        <button class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>
+                            <a href="#" class="product__trade-wish-link">
+                                В избранное
+                            </a>
+                        </button>
+                    </div>                     
+                </div> 
+            </div>
+        </section>
+        <footer>
+            <div class="footer view-port">
+                <div class="footer__block1">
+                    <div class="footer__block1-header">
+                        <h3 class="footer__block1-title">
+                            Блок 1
+                            <span></span>
+                        </h3>
+                        
+                    </div>
+                    <h3 class="footer__block1-text1">
+                        Будьте в курсе новостей и новинок!
+                    </h3>
+                    <h2 class="footer__block1-text2">
+                        Подписывайтесь на рассылку
+                    </h2>
+                    <form class="footer__form" action="">
+                        <input
+                            class="footer__form-email" 
+                            type="email"
+                            placeholder="Укажите свой email для подписки">
+                        <button class="footer__form-btn" type="submit">
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__block2"></div>
+                <div class="footer__block3"></div>
+                <div class="footer__block4"></div>
+            </div>
+        </footer>
+    </div>
+<script src="https://kit.fontawesome.com/13fd77a47d.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>    
+<script src="bundle.js"></script></body>
+</html>

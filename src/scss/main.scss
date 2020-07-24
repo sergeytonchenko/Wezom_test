@@ -6,7 +6,8 @@
 @import "filter-content";
 @import "middle";
 @import "product";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;700;900&display=swap');
 
 html, body {
     @include clear;
@@ -31,6 +32,10 @@ button:focus {
 
 a {
     text-decoration: none;
+}
+
+object {
+    pointer-events: none;
 }
 
 .view-port {

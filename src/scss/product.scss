@@ -1,6 +1,7 @@
 .product {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px !important;
 
     &__block {
         width: 25%;
@@ -28,7 +29,12 @@
 	    text-decoration: underline;
         color: #3b3b3b;        
         line-height: 26px;
-        font-weight: 400; 
+        font-weight: 400;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__subtitle {
@@ -88,16 +94,31 @@
 
     &__pictogram {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        align-items: center;                
         margin: 21px 31px 0 7px;
 
-        object {
-            margin-bottom: 37px;
+        span {
+            margin-bottom: 1.2rem;
+            text-align: center; 
         }
+        span:last-child {
+            margin-bottom: 0;             
+        }
+        
+    }
+
+    &__pictogram-text {
+        font-size: 10px;
+	    text-transform: uppercase;
+        color: #91959a;
+        margin-top: 4px;
     }
 
     &__picture {
         margin-top: 24px;
+        height: 200px;
+        margin-bottom: 2px;       
     }
 
     &__ad {
@@ -108,19 +129,15 @@
     &__ad-icon {
         display: flex;
         position: relative;
+        margin-left: -12px;
 
         span {
             position: absolute;
             width: 100%;
-            top: 25%;
+            top: 29%;
             left: 0;
             text-align: center;
         };
-    }
-
-    &__ad-picture {
-       
-        
     }
 
     &__ad-text {        
@@ -129,6 +146,100 @@
 	    text-transform: uppercase;
 	    color: #fff;
     }
+
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__price-new, &__price-uah {        
+        font-style: italic;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #3b3b3b;
+        margin-left: 9px; 
+    }  
+    
+    &__price-new {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__price-uah {
+        font-size: 18px;        
+    }
+
+    &__price-old {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 700; 
+        margin-right: 15px;       
+	    text-transform: uppercase;
+        color: #989898;
+        text-decoration-line: line-through;
+        text-decoration-style: solid;
+        text-decoration-color: #e00000;
+    }
+
+    &__btn {
+        @include clear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: -webkit-linear-gradient(left, #ff8500, #ffae00);
+	    background-image: -moz-linear-gradient(left, #ff8500, #ffae00);
+	    background-image: -o-linear-gradient(left, #ff8500, #ffae00);
+	    background-image: -ms-linear-gradient(left, #ff8500, #ffae00);
+	    background-image: linear-gradient(to right, #ff8500, #ffae00);
+	    width: 210px;
+        height: 50px;
+        font-size: 14px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+        color: #fff;
+        margin: 19px auto 13px;
+        
+        &:hover {
+            background-image: -webkit-linear-gradient(left, #d36e00, #e59100);
+	        background-image: -moz-linear-gradient(left, #d36e00, #e59100);
+	        background-image: -o-linear-gradient(left, #d36e00, #e59100);
+	        background-image: -ms-linear-gradient(left, #d36e00, #e59100);
+	        background-image: linear-gradient(to right, #d36e00, #e59100);
+        }
+    }
+
+    &__trade {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 16px;
+    }
+
+    &__trade-compare, &__trade-wish {
+        display: flex;
+        align-items: center;        
+        @include clear;
+        background-color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            .product__trade-wish-link,
+            .product__trade-compare-link {
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    &__trade-wish-link, &__trade-compare-link {
+        margin-left: 10px;
+        font-size: 14px;
+        text-decoration: underline;
+        color: #3b3b3b;        
+    }
+
+    
 
 
 }

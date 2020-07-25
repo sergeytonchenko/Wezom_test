@@ -23,11 +23,18 @@ h1, h2, h3, h4, h5, h6, p, input, select {
     }
 }
 
-button, 
-button:active, 
-button:focus {
+button, button:active, button:focus,
+input, input:active, input:focus,
+select, select:active, select:focus {
     border: none;
-    outline: none;
+    outline: none;    
+}
+
+select {
+    appearance:none;    
+}
+
+button, button:active, button:focus {
     cursor: pointer;
 }
 

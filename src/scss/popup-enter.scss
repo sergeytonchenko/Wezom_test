@@ -1,0 +1,79 @@
+.popup1 {
+    position: absolute;
+    width: 755px;
+	height: 431px;
+    background-color: #fff;
+    z-index: 15;
+    top: 100px;
+    left: 200px;
+    border: 1px solid black;
+    display: flex;
+
+    &__enter {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;        
+        width: 50%;
+    }    
+
+    &__enter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;        
+        height: 100%;        
+
+        p, label {
+            font-size: 14px;
+            color: #3b3b3b;
+            font-weight: 700;
+        }
+        
+    }
+
+    &__enter-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #3b3b3b;
+    }
+
+    &__enter-link {
+        font-size: 14px;
+        text-decoration: underline;
+        color: #3d3d3d;
+    }    
+
+    &__enter-social {
+        width: 50%;
+    }
+
+    &__enter-email, &__enter-password {
+        width: 299px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+
+        &:active, &:focus {
+            border: 1px solid #d2d2d2 !important; 
+        }
+
+        &:placeholder {
+            font-size: 14px;
+            color: #9c9c9c;
+        }
+    }
+    
+
+    &__enter-btn {
+        width: 210px;
+        height: 50px;
+        background-color: #afb9c6;
+        font-size: 14px;
+        color: #fff;
+
+        &:hover {
+            background-color: #b9bdc3; 
+        }
+    }
+    
+}

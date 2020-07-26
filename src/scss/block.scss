@@ -54,6 +54,14 @@
         padding-bottom: 14px;
         padding-top: 20px;
 
+        &:hover {
+            background-color: #f1f1f1;
+
+            i {
+                color: #808390;                
+            }
+        }
+
         &:nth-child(1) {
             padding-top: 1.9rem;
         } 

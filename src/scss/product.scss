@@ -200,6 +200,10 @@
 	    text-transform: uppercase;
         color: #fff;
         margin: 19px auto 13px;
+
+        object {
+            margin-right: 15px;
+        }
         
         &:hover {
             background-image: -webkit-linear-gradient(left, #d36e00, #e59100);

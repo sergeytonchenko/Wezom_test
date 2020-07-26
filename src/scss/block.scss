@@ -1,13 +1,18 @@
 @import "filter-content";
 
 .block {
-    display: flex;  
+    display: flex;
+    
+    &__menu {
+        display: flex;
+        flex-direction: column;
+    }
 
-    &__menu--hat {
+    &__menu-hat {
         display: flex;
     }
 
-    &__menu--burger {
+    &__menu-burger {
         position: relative;
         width: 62px;
         height: 56px;
@@ -20,7 +25,7 @@
         }
     }
 
-    &__menu--header {
+    &__menu-header {
         background-image: -webkit-linear-gradient(left, #ff8500, #ffae00);
 	    background-image: -moz-linear-gradient(left, #ff8500, #ffae00);
 	    background-image: -o-linear-gradient(left, #ff8500, #ffae00);
@@ -35,6 +40,39 @@
 	        font-weight: 700;
             color: #fff;
             padding: 1rem;
+        }
+    }
+
+    &__menu-list {
+        height: 395px;
+        width: 326px;
+        @include clear-list
+    }
+
+    &__menu-item {
+        border: 1px solid #f1f1f1;
+        padding-bottom: 14px;
+        padding-top: 20px;
+
+        &:nth-child(1) {
+            padding-top: 1.9rem;
+        } 
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__menu-link {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3b3b3b;
+        padding-left: 2.5rem;
+
+        i {
+            color: #c0c4d8;
+            margin-left: 152px;
         }
     }
 

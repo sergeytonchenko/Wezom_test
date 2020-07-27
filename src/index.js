@@ -3,7 +3,18 @@ import './scss/main.scss';
 
 
 const singIn = document.querySelector(".nav__button");
-singIn.addEventListener("click" , () => alert('Спасибо!'))
+const popup1 = document.querySelector(".popup1");
+const close = document.querySelector(".popup1__enter-close");
+const wrapperBg = document.querySelector(".wrapper__bg");
+singIn.addEventListener("click" , function () {
+    popup1.style.display = "flex";
+    wrapperBg.style.display = "block";
+})
+
+close.addEventListener("click" , function () {
+    popup1.style.display = "none";
+    wrapperBg.style.display = "none";    
+})
 
 
 
@@ -19,6 +30,8 @@ callMe.addEventListener("click" , () => alert('Позвони мне, позво
 //     }   
     
 // }
+
+
 
 
     

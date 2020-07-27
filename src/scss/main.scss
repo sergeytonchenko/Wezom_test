@@ -13,7 +13,7 @@
 html, body {
     @include clear;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
 
 h1, h2, h3, h4, h5, h6, p, input, select {
@@ -55,6 +55,18 @@ object {
 .wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100%;
+}
+
+.wrapper__bg {
+    background-color: #494949c7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;    
 }
 

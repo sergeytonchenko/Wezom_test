@@ -286,41 +286,77 @@
                                 <label for="checkbox" class="filterContent__tabs-btn">Tab1</label>
                             </div>
                             <div class="filterContent__select">
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 1</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 2</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 3</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 4</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 6</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
+                                <div class="filterContent__select-select">
+                                    <select id="select-1" name="select">                                
+                                        <option value="Все категории" selected>Select 1</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select id="select-2" name="select">                                
+                                        <option value="Все категории" selected>Select 2</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-3" name="select">                                
+                                        <option value="Все категории" selected>Select 3</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>                                        
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-4" name="select">                                
+                                        <option value="Все категории" selected>Select 4</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select name="select">                                
+                                    </select>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-6" name="select">                                
+                                        <option value="Все категории" selected>Select 6</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <p>Цена</p>
+                                    <input 
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="50">
+                                    <input 
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="25000">
+                                </div>
                             </div>
+                            <div class="filterContent__btns">
+                                <button id="btn-clear" class="filterContent__btn-clear">
+                                    <i class="fas fa-times"></i>
+                                    Очистить фильтр
+                                </button>
+                                <button class="filterContent__btn-apply">
+                                    Применить фильтр
+                                </button>
 
-
+                            </div>
                         </form> 
                     </div>
                 </div>

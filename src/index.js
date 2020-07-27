@@ -48,6 +48,34 @@ validSearch.oninput = () => {
     else validSearch.style.border = '2px solid green';    
 }
 
+//Функция переключение Tab1, Tab 2
+const tabs = document.querySelectorAll('.filterContent__tab');
+
+tabs.forEach( item => {
+    item.addEventListener('click', selectTabs)
+});
+
+function selectTabs () {
+    tabs.forEach( item => {
+        item.classList.remove('tab-active');
+    });
+    this.classList.add('tab-active');
+}
+
+//Функция переключение табов в панели навигации
+const tabNav = document.querySelectorAll('.filterNav__item');
+
+tabNav.forEach( item => {
+    item.addEventListener('click', selectTabNav)
+});
+
+function selectTabNav () {
+    tabNav.forEach( item => {
+        item.classList.remove('is-active');
+    });
+    this.classList.add('is-active');
+}
+
 //Функция сброса select & input
 const btnClear = document.getElementById("btn-clear");
 btnClear.addEventListener("click" , () => {
@@ -55,8 +83,7 @@ btnClear.addEventListener("click" , () => {
         document.getElementById(`select-${r}`)
         .options[0].selected = 'selected';
         document.getElementById(`input-${r}`).value = "";        
-    }
-    
+    }    
 })
 
 //Функция валидации Цены
@@ -91,8 +118,7 @@ for (let t = 0; t < btnWish.length; t++) {
         wishBlock.style.display = "block";
         wishDigit.innerText = `${ count1++ }`;
         }              
-    })
-      
+    })      
 }
 
 for (let t = 0; t < btnCompare.length; t++) {
@@ -105,8 +131,7 @@ for (let t = 0; t < btnCompare.length; t++) {
             compareBlock.style.display = "block";
             compareDigit.innerText = `${ count2++ }`; 
         } 
-    })
-         
+    })         
 }
 
 //Функция валидности email

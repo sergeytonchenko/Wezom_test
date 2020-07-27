@@ -3,6 +3,8 @@
     <style>
       .cls-1 {
         opacity: 0.4;
+        stroke: #ff6c00; /* цвет обводки */
+  stroke-width: 10px;        
       }
     </style>
   </defs>

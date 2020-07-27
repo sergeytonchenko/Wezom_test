@@ -148,14 +148,24 @@
                 justify-content: center;
                 width: 20%;
                 
-                &:hover {
+                &:hover {                    
+                    .filterNav__link {
+                        color: #fff;
+                    }
+                }
+
+                &.is-active {
                     .filterNav__border {
                         opacity: 1;
                     }
                     .filterNav__link {
                         color: #fff;
                     }
-                }
+                    .filterNav__icon {
+                        fill: red($color: #c90c0c);
+                    }
+                }   
+                
             }
 
             &__link {

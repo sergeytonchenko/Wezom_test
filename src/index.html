@@ -58,7 +58,8 @@
                             <p>Пароль</p>
                             <input 
                                 class="popup1__enter-password"
-                                type="text"
+                                type="password"
+                                name="password"                                
                                 placeholder="*************">                            
                             <div>
                                 <input class="popup1__enter-remember" type="checkbox" name="" id="q1">
@@ -100,6 +101,22 @@
         </nav>
         <section>
             <div class="header view-port">
+                <div class="popup2">
+                    <span class="popup2__close"></span>
+                    <h2 class="popup2__title">Перезвоните мне</h2>
+                    <p class="popup2__text">Номер телефона</p>
+                    <form action="">
+                        <input
+                            class="popup2__input"                      
+                            type="tel" name="phone"                            
+                            placeholder="+38(0__) ___ - __ - __"
+                            required>
+                        <button class="popup2__btn"  type="submit">
+                            Перезвоните мне
+                        </button>
+
+                    </form>
+                </div>
                 <div class="header__logo">
                     <img src="./img/header__logo.png" alt="header__logo">
                 </div>
@@ -215,8 +232,13 @@
                 <div class="block__main">
                     <div class="block__search">
                         <form class="block__search-form" action="#" method="post">
-                            <input type="text" id="name" name="search"
-                            class="block__search-input" placeholder="Поиск по сайту">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="search"
+                                class="block__search-input"
+                                placeholder="Поиск по сайту"
+                                minlength="2">
                             <select name="select" class="block__search-select">                                
                                 <option value="Все категории" selected>Все категории</option> 
                                 <option value="Ссылка 1">Ссылка 1</option>
@@ -337,11 +359,11 @@
                                 </div>
                                 <div class="filterContent__select-select">
                                     <p>Цена</p>
-                                    <input 
+                                    <input id="input-1"
                                         class="filterContent__select-price"
                                         type="text"
                                         placeholder="50">
-                                    <input 
+                                    <input id="input-2"
                                         class="filterContent__select-price"
                                         type="text"
                                         placeholder="25000">
@@ -471,15 +493,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>
                 </div>
                 <div class="product__block">
@@ -562,15 +584,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>
                 </div>
                 <div class="product__block">
@@ -654,15 +676,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div> 
                 </div>
                 <div class="product__block">
@@ -737,21 +759,25 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>                     
                 </div> 
             </div>
         </section>
         <footer>
             <div class="footer view-port">
+                <div class="popup3">
+                    <h2>Вы успешно подписаны на рассылку!</h2>
+                    <span class="popup3__close"></span>
+                </div>
                 <div class="footer__block1">
                     <div class="footer__block1-header">
                         <h3 class="footer__block1-title">

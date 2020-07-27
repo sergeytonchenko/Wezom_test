@@ -1,7 +1,7 @@
 import './css/style.css';
 import './scss/main.scss';
 
-
+//Функция popup Вход
 const singIn = document.querySelector(".nav__button");
 const popup1 = document.querySelector(".popup1");
 const close = document.querySelector(".popup1__enter-close");
@@ -17,25 +17,103 @@ close.addEventListener("click" , () => {
     wrapperBg.style.display = "none";    
 })
 
-const callMe = document.querySelector(".header__button");
-callMe.addEventListener("click" , () => alert('Позвони мне, позвони'))
+//Валидность пароля
+const password = document.querySelector(".popup1__enter-password");
 
-const btnClear = document.getElementById("btn-clear");// 
+password.oninput = () => {
+    if (password.value.length < 4) password.style.border = '2px solid red';
+    else password.style.border = '2px solid green';    
+}
+
+// Функция popup Заказ обратного звонка
+const callMe = document.querySelector(".header__button");
+const callClose = document.querySelector(".popup2__close");
+const popup2 = document.querySelector(".popup2");
+
+callMe.addEventListener("click" , () => {
+    popup2.style.display = "block";
+    wrapperBg.style.display = "block";
+})
+
+callClose.addEventListener("click" , () => {
+    popup2.style.display = "none";
+    wrapperBg.style.display = "none";    
+})
+
+//Функция валидности Поиска
+const validSearch = document.querySelector('.block__search-input');
+
+validSearch.oninput = () => {
+    if (validSearch.value.length < 2) validSearch.style.border = '2px solid red';
+    else validSearch.style.border = '2px solid green';    
+}
+
+//Функция сброса select & input
+const btnClear = document.getElementById("btn-clear");
 btnClear.addEventListener("click" , () => {
     for (let r = 1; r < 7; r++) {
         document.getElementById(`select-${r}`)
-        .options[0].selected = 'selected'        
+        .options[0].selected = 'selected';
+        document.getElementById(`input-${r}`).value = "";        
     }
     
 })
 
-// const btnTab = document.querySelectorAll('.filterContent__tabs-btn');
-// for (let i = 0; i < btnTab.length; i++) {
-//     btnTab[i].onclick = function () {
-//         btnTab[i].classList.add('active');    
-//     }   
+//Функция валидации Цены
+const validPrice = /(^[0-9]{1}|[1-9]{1}[0-9]$)/;
+const inputPrice = document.querySelector('.filterContent__select-price');
+
+const validatePrice = (value) => validPrice.test(value);  
+
+inputPrice.oninput = () => {
+    if (validatePrice(inputPrice.value)) inputPrice.style.border = '2px solid green';
+    else inputPrice.style.border = '2px solid red';
+  };
+
+
+//Функции Сравнение и Избранное
+const btnWish = document.querySelectorAll(".btn-wish");
+
+for (let t = 0; t < btnWish.length; t++) {
+    btnWish[t].addEventListener("click" , (e) => { 
+        console.log (e.target);       
+         e.target.innerHTML = "В избранном";        
+    })
     
-// }
+}
+
+//Функция валидности email
+const emailValid = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+const inputEmail = document.querySelector('.footer__form-email');
+
+const validateEmail = (value) => emailValid.test(value);  
+
+inputEmail.oninput = () => {
+    if (validateEmail(inputEmail.value)) inputEmail.style.border = '2px solid green';
+    else inputEmail.style.border = '2px solid red';
+  };
+
+
+//Функция для Рассылки подписки
+const btnMailing = document.querySelector(".footer__form-btn");
+const popup3 = document.querySelector(".popup3"); 
+const popup3Close = document.querySelector(".popup3__close");
+
+btnMailing.addEventListener("click" , () => {
+    if (validateEmail(inputEmail.value)) {
+        popup3.style.display = "block";
+        wrapperBg.style.display = "block";
+    }
+})
+
+popup3Close.addEventListener("click" , () => {
+    popup3.style.display = "none";
+    wrapperBg.style.display = "none";    
+})
+
+
+
+
 
 
 

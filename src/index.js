@@ -73,7 +73,7 @@ function selectTabNav () {
     tabNav.forEach( item => {
         item.classList.remove('is-active');
     });
-    this.classList.add('is-active');
+    this.classList.add('is-active');    
 }
 
 //Функция сброса select & input

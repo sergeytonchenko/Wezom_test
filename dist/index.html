@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wezom test</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__bg"></div>
+        <nav>
+            <div class="nav view-port">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Главная
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            О компании
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 1
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 2
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Ссылка 3
+                            <span class="nav__menu-border"></span>
+                        </a>
+                    </li>
+                </ul>                
+                <button class="nav__button">
+                    <img class="nav__icon" src="./img/nav__man.png" alt="nav__man">            
+                    Вход
+                </button> 
+                <div class="popup1">
+                    <div class="popup1__enter">
+                        <form class="popup1__enter-form" action="">
+                            <h2 class="popup1__enter-title">Вход в личный кабинет</h2>
+                            <p>Ваш email</p>
+                            <input 
+                                class="popup1__enter-email"
+                                type="text"
+                                placeholder="mikel_ivanov98@gmail.com">
+                            <p>Пароль</p>
+                            <input 
+                                class="popup1__enter-password"
+                                type="password"
+                                name="password"                                
+                                placeholder="*************">                            
+                            <div>
+                                <input class="popup1__enter-remember" type="checkbox" name="" id="q1">
+                                <label for="q1">Запомнить меня</label>
+                            </div>
+                            <div>
+                                <a class="popup1__enter-link" href="">
+                                    Забыли пароль?
+                                </a>
+                                <a class="popup1__enter-link" href="">
+                                    Регистрация
+                                </a>
+                            </div>
+                            <button class="popup1__enter-btn" type="submit">
+                                Войти в личный кабинет
+                            </button>
+                        </form>
+                    </div>
+                    <div class="popup1__enter-social">
+                        <h2 class="popup1__enter-social-title">
+                            Войти с помощью
+                        </h2>
+                        <button class="popup1__enter-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </button>
+                        <button class="popup1__enter-twitter">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </button>
+                        <button class="popup1__enter-google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                        <span class="popup1__enter-close"></span>
+                    </div>
+                </div>               
+            </div>
+        </nav>
+        <section>
+            <div class="header view-port">
+                <div class="popup2">
+                    <span class="popup2__close"></span>
+                    <h2 class="popup2__title">Перезвоните мне</h2>
+                    <p class="popup2__text">Номер телефона</p>
+                    <form action="">
+                        <input
+                            class="popup2__input"                      
+                            type="tel" name="phone"                            
+                            placeholder="+38(0__) ___ - __ - __"
+                            required>
+                        <button class="popup2__btn"  type="submit">
+                            Перезвоните мне
+                        </button>
+                    </form>
+                </div>
+                <div class="header__logo">
+                    <img src="./img/header__logo.png" alt="header__logo">
+                </div>
+                <div class="header__call">
+                    <a href="#" class="header__phone">+380 98 170 00 740</a>
+                    <a href="#" class="header__phone">+380 98 170 00 740</a>
+                    <button class="header__button">                        
+                        <img class="header__icon" src="./img/header__phone.png" alt="header__phone">             
+                        Перезвонить мне</button>
+                </div>
+                <div class="header__actions">
+                    <div class="header__action">
+                        <div class="header__action-digit">
+                            <span>
+                                <object 
+                                    type="image/svg+xml"
+                                    data="./img/digits.svg">                                
+                                </object>
+                            </span>                            
+                            <p id="compare-number"></p>                            
+                        </div>
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/action_compare.svg">
+                        </object>
+                        <p class="header__text">Сравнение</p>
+                    </div>
+                    <div class="header__action">
+                        <div class="header__action-digit">
+                            <span>
+                                <object 
+                                    type="image/svg+xml"
+                                    data="./img/digits.svg">                                
+                                </object>
+                            </span>                            
+                            <p>5</p>                            
+                        </div>
+                        <object type="image/svg+xml" data="./img/action_favorites.svg"></object>
+                        <p class="header__text">Избранное</p>
+                    </div>
+                    <div class="header__action">
+                        <div class="header__action-digit">
+                            <span>
+                                <object 
+                                    type="image/svg+xml"
+                                    data="./img/digits.svg">                                
+                                </object>
+                            </span>                            
+                            <p>5</p>                            
+                        </div>
+                        <object type="image/svg+xml" data="./img/action_basket.svg"></object>
+                        <p class="header__text">Корзина</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="block view-port">
+                <div class="block__menu">
+                    <div class="block__menu-hat">
+                        <div class="block__menu-burger">
+                            <object type="image/svg+xml" data="./img/burger.svg"></object>    
+                        </div>
+                        <div class="block__menu-header">
+                            <p>Меню</p>    
+                        </div>
+                    </div>  
+                    <ul class="block__menu-list">
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 1
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 2
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 3
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 4
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 5
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 6
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="block__menu-item">
+                            <a class="block__menu-link" href="#">
+                                Ссылка 7
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="block__main">
+                    <div class="block__search">
+                        <form class="block__search-form" action="#" method="post">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="search"
+                                class="block__search-input"
+                                placeholder="Поиск по сайту"
+                                minlength="2">
+                            <select name="select" class="block__search-select">                                
+                                <option value="Все категории" selected>Все категории</option> 
+                                <option value="Ссылка 1">Ссылка 1</option>
+                                <option value="Ссылка 2">Ссылка 2</option>
+                                <option value="Ссылка 2">Ссылка 3</option>
+                            </select>                                                       
+                            <button class="block__search-btn" type="submit">Поиск</button>
+
+                        </form>
+                    </div>
+                    <div class="block__filter">                        
+                        <ul class="block__filterNav filterNav">
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon" 
+                                      type="image/svg+xml"
+                                      data="./img/filter__img1.svg">
+                                    </object>
+                                    Ссылка 1
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img2.svg">
+                                    </object>
+                                    Ссылка 2
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img3.svg">
+                                    </object>
+                                    Ссылка 3
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img4.svg">
+                                    </object>
+                                    Ссылка 4
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>
+                            <li class="filterNav__item">
+                                <a class="filterNav__link" href="#">
+                                    <object class="filterNav__icon"
+                                      type="image/svg+xml"
+                                      data="./img/filter__img5.svg">
+                                    </object>
+                                    Ссылка 5
+                                    <span class="filterNav__border"></span>
+                                </a>
+                            </li>                                
+                        </ul>
+                        <form action="" class="block__filterContent filterContent">                            
+                            <div class="filterContent__tabs">
+                                <input type="checkbox" id="checkbox" checked>
+                                <label for="checkbox" class="filterContent__tabs-btn">Tab1</label>
+                            </div>
+                            <div class="filterContent__select">
+                                <div class="filterContent__select-select">
+                                    <select id="select-1" name="select">                                
+                                        <option value="Все категории" selected>Select 1</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select id="select-2" name="select">                                
+                                        <option value="Все категории" selected>Select 2</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-3" name="select">                                
+                                        <option value="Все категории" selected>Select 3</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>                                        
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-4" name="select">                                
+                                        <option value="Все категории" selected>Select 4</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select name="select">                                
+                                    </select>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-6" name="select">                                
+                                        <option value="Все категории" selected>Select 6</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <p>Цена</p>
+                                    <input id="input-1"
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="50">
+                                    <input id="input-2"
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="25000">
+                                </div>
+                            </div>
+                            <div class="filterContent__btns">
+                                <button id="btn-clear" class="filterContent__btn-clear">
+                                    <i class="fas fa-times"></i>
+                                    Очистить фильтр
+                                </button>
+                                <button class="filterContent__btn-apply">
+                                    Применить фильтр
+                                </button>
+
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="middle view-port">
+                <h1 class="middle__title">
+                    Карточки товаров
+                    <span class="middle__border"></span>
+                </h1>
+                <a href="#" class="middle__link">
+                    Ссылка в каталог
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+
+
+            </div>
+        </section>
+        <section>
+            <div class="product view-port">
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input  type="radio" name="rate" id="r1_5">
+                            <label for="r1_5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1_4">
+                            <label for="r1_4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1_3" checked>
+                            <label for="r1_3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1_2">
+                            <label for="r1_2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r1_1">
+                            <label for="r1_1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-1.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon2.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Хит</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon3.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Скидка</p>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2>                        
+                        <p class="product__price-old">1250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <div class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <p class="product__trade-compare-link btn-compare">
+                                Сравнить товар
+                            </p>    
+                        </div>
+                        <div class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
+                                В избранное
+                            </p>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input type="radio" name="rate" id="r2_5">
+                            <label for="r2_5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2_4">
+                            <label for="r2_4"><i class="fas fa-star"></i></label>
+                            <input checked type="radio" name="rate" id="r2_3">
+                            <label for="r2_3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2_2">
+                            <label for="r2_2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r2_1">
+                            <label for="r2_1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>                            
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-2.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon2.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Хит</p>
+                            </span>
+                        </div>                        
+                    </div> 
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2> 
+                        <p class="product__price-old">1250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <div class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <p class="product__trade-compare-link btn-compare">
+                                Сравнить товар
+                            </p>    
+                        </div>
+                        <div class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
+                                В избранное
+                            </p>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br />
+                        FA 12 Readymix 1 л Concentrat, Germany
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input type="radio" name="rate" id="r3_5">
+                            <label for="r3_5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3_4">
+                            <label for="r3_4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3_3">
+                            <label for="r3_3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3_2">
+                            <label for="r3_2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r3_1">
+                            <label for="r3_1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Без отзывов</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>
+                            <span>
+                                <object 
+                                type="image/svg+xml"
+                                data="./img/label.svg">
+                             </object>
+                             <p class="product__pictogram-text">Новая</p>
+                            </span>
+                             
+                        </div>
+                        <img src="./img/product_photo-3.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>                         
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2> 
+                        <p class="product__price-old">11 250 грн.</p>
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <div class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <p class="product__trade-compare-link btn-compare">
+                                Сравнить товар
+                            </p>    
+                        </div>
+                        <div class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
+                                В избранное
+                            </p>                             
+                        </div>
+                    </div> 
+                </div>
+                <div class="product__block">
+                    <button class="product__mark">Mark</button>
+                    <h3 class="product__title">
+                        Антифриз Fosser Antifreeze <br /> <br />                        
+                    </h3>
+                    <div class="product__subtitle">
+                        <div class="product__rating">
+                            <input checked type="radio" name="rate" id="r4_5">
+                            <label for="r4_5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4_4">
+                            <label for="r4_4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4_3">
+                            <label for="r4_3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4_2">
+                            <label for="r4_2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rate" id="r4_1">
+                            <label for="r4_1"><i class="fas fa-star"></i></label>
+                        </div>
+                        <a href="#" class="product__review">Отзывы (10)</a>
+                        <p class="product__stock">В наличии: 24 шт.</p>                    
+                    </div>
+                    <div class="product__content">
+                        <div class="product__pictogram">                            
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/sun.svg">
+                            </object>
+                            <p class="product__pictogram-text">Летняя</p>
+                            </span>
+                            <span>
+                                <object 
+                               type="image/svg+xml"
+                               data="./img/car.svg">
+                            </object>
+                            <p class="product__pictogram-text">Легковая</p>
+                            </span>  
+                        </div>
+                        <img src="./img/product_photo-4.png" alt="" class="product__picture">
+                    </div>
+                    <div class="product__ad">
+                        <div style="visibility: hidden;" class="product__ad-icon">
+                            <img class="product__ad-picture" src="./img/ad-icon1.png" alt="">
+                            <span>
+                                <p class="product__ad-text">Новинка</p>
+                            </span>
+                        </div>                         
+                    </div>
+                    <div class="product__price">
+                        <h2 class="product__price-new">
+                            599
+                            <p class="product__price-uah">грн.</p>
+                        </h2>
+                                                
+                    </div>
+                    <button class="product__btn">
+                        <object 
+                           type="image/svg+xml"
+                           data="./img/cart.svg">
+                        </object>
+                        Купить товар
+                    </button>
+                    <div class="product__trade">
+                        <div class="product__trade-compare">
+                            <object 
+                                type="image/svg+xml"
+                                data="./img/trade-compare.svg">
+                            </object>
+                            <p class="product__trade-compare-link btn-compare">
+                                Сравнить товар
+                            </p>    
+                        </div>
+                        <div class="product__trade-wish">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/trade-wish.svg">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
+                                В избранное
+                            </p>                             
+                        </div>
+                    </div>                     
+                </div> 
+            </div>
+        </section>
+        <footer>
+            <div class="footer view-port">
+                <div class="popup3">
+                    <h2>Вы успешно подписаны на рассылку!</h2>
+                    <span class="popup3__close"></span>
+                </div>
+                <div class="footer__block1">
+                    <div class="footer__block1-header">
+                        <h3 class="footer__block1-title">
+                            Блок 1
+                            <span></span>
+                        </h3>
+                        
+                    </div>
+                    <h3 class="footer__block1-text1">
+                        Будьте в курсе новостей и новинок!
+                    </h3>
+                    <h2 class="footer__block1-text2">
+                        Подписывайтесь на рассылку
+                    </h2>
+                    <form class="footer__form" action="">
+                        <input
+                            class="footer__form-email" 
+                            type="email"
+                            placeholder="Укажите свой email для подписки">
+                        <button class="footer__form-btn" type="submit">
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__block2">
+                    <div class="footer__block2-header">
+                        <h3 class="footer__block2-title">
+                            Блок ссылок 1
+                            <span></span>
+                        </h3>
+                    </div>
+                    <ul class="footer__block2-list">
+                        <li class="footer__block2-item">
+                            <a href="#" class="footer__block2-link">Ссылка 1</a> </li>
+                        <li class="footer__block2-item">
+                            <a href="#" class="footer__block2-link">Ссылка 2</a> </li>
+                        <li class="footer__block2-item">
+                            <a href="#" class="footer__block2-link">Ссылка 3</a> </li>
+                        <li class="footer__block2-item">
+                            <a href="#" class="footer__block2-link">Ссылка 4</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__block3">
+                    <div class="footer__block3-header">
+                        <h3 class="footer__block3-title">
+                            Блок 2
+                            <span></span>
+                        </h3>
+                    </div>
+                    <ul class="footer__block3-list">
+                        <li class="footer__block3-item">
+                            <a href="#" class="footer__block3-link">Ссылка 1</a> </li>
+                        <li class="footer__block3-item">
+                            <a href="#" class="footer__block3-link">Ссылка 2</a> </li>
+                        <li class="footer__block3-item">
+                            <a href="#" class="footer__block3-link">Ссылка 3</a> </li>
+                        <li class="footer__block3-item">
+                            <a href="#" class="footer__block3-link">Ссылка 4</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__block4">
+                    <div class="footer__block4-header">
+                        <h3 class="footer__block4-title">
+                            Блок ссылок 3
+                            <span></span>
+                        </h3>
+                    </div>
+                    <ul class="footer__block4-list">
+                        <li class="footer__block4-item">
+                            <a href="#" class="footer__block4-link">Ссылка 1</a> </li>
+                        <li class="footer__block4-item">
+                            <a href="#" class="footer__block4-link">Ссылка 2</a> </li>
+                        <li class="footer__block4-item">
+                            <a href="#" class="footer__block4-link">Ссылка 3</a> </li>
+                        <li class="footer__block4-item">
+                            <a href="#" class="footer__block4-link">Ссылка 4</a> </li>
+                    </ul>
+                </div>
+                <hr class="footer__line" />
+                <div class="footer__block5">
+                    <div class="footer__logo">
+                        <img src="./img/footer__logo.png" alt="header__logo">
+                    </div>
+                    <address class="footer__copyright">
+                        &copy; Copyrith 2017. Тестовое задание Wezom
+                    </address>
+                    <div class="footer__social">
+                        <div class="footer__social-frame">
+                            <a href="https://vk.com" class="footer__social-link" target="_blank">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </div>
+                        <div class="footer__social-frame">
+                            <a href="https://facebook.com" class="footer__social-link" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="footer__social-frame">
+                            <a href="https://twitter.com" class="footer__social-link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="footer__social-frame">
+                            <a href="https://youtube.com" class="footer__social-link" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__dev">
+                        <object class="footer__dev-logo" 
+                               type="image/svg+xml"
+                               data="./img/wezom_logo.svg">
+                        </object>
+                        <div class="footer__dev-text">
+                            <small>Разработка тестового</small>
+                            <p>Wezom Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+<script src="https://kit.fontawesome.com/13fd77a47d.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>    
+<script src="bundle.js"></script></body>
+</html>

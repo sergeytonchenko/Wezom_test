@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="17" viewBox="0 0 40 17">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.4;
-        fill: #ffc925;
-      }
-    </style>
-  </defs>
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="40" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAARCAYAAACvi+4IAAACkElEQVRIia2WzU8TURTFf9Bpq1REESWgRkRRQ/wgxoCyMNHERKMuNLp3xV+GS8LChRuMG2PUhBgUXSCKJgQQ6gcfUWqFMTc5Y17GeXTaepKmM9P77px37zn3tSEMQ1IiDxzXdyuwG9gG5LS8DHwHloE5YAYopU3uQyWC9vLDwFGg0+KryP0beAu8rIeoj+BO4BKwF2iM/bYAfAC+Aj+AX8BVoA2YAtaAbmCX4teBp8B0PQTbRcYqtAfocaplBCaBU0AWGAG+xPKcBAaBJWBUz4xkvzZrmAVeAMVqCAZAnxLFYVpqATKqlpHbBL4lxL4HLmiTLVprVf4EnAXOAAf0WdTzWW10s1IF70lr8xJ6pB0T+jXgIBCqoiUlT4K9vEkvjVc4JwnsiD0PJYFVbagoHn91ZwSHYos+Aw/V2py0eChlR/4H1iSFaR9BwzPglXN/E+gAPmqHSbDfu6TDtIawihd0HagLge6fAxOBE1xSqdukuwjNjtAn1XofuqTR1ykJNovQCrAB3NV8NQxYN12CeX3KqoAJ/qJcHaGzAsG02KfcrYove+ZlXyAXNUrY5tYJ3d+Qc0PFZORIux+vg5y5/LqTe0PXNkneKGa74joCHUlHNFiL2lW3FhWlxSa14pzG0ox27SKv66xa58OAYhYlhYLMaJs/4czROxZnJrHz9IpEHiEaK4/kYptr74DehFFRK8aAy8o9pWFfiOUqBZpDD4D9OnfbJdQGtfWnTLLqOKzszioHGclhqwM+6+Red3JHxnRzL/nO4vPAac2kJ1pk/2SOScjD0k4tGFS1knIb4ftubh9Ba/ttTzsfq921wgxwK23urf5umTGsknaKRIYx9/qOumoQ5ba5aa21CfJvbuAPHay6/iwnbikAAAAASUVORK5CYII="/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="17" viewBox="0 0 39.71 16.75"><defs><style>.cls-1,.cls-2,.cls-3{opacity: 0.3;fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-1,.cls-3{stroke-width:2px;}.cls-3{stroke-linecap:round;}</style></defs><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_2" data-name="Layer 2"><line class="cls-1" x1="29.24" y1="12.73" x2="12.47" y2="12.73"/><path class="cls-1" d="M5.88,12.73S1,12.58,1,9.92c0-1.47,0-3,0-4A1.37,1.37,0,0,1,2.39,4.55h2S10.7.81,17.45,1c4.14.38,4.61.75,8.69,3.35,1.46.92,5.34,1.83,7.79,2.09,3,.33,5.21,2.6,4.71,5.58l-.09.7h-3.2"/><path class="cls-1" d="M1.79,6.87h1.7a1,1,0,0,1,1,1v0a1.7,1.7,0,0,1-1.7,1.7h-1a0,0,0,0,1,0,0V6.87a0,0,0,0,1,0,0Z"/><circle class="cls-1" cx="9.14" cy="12.73" r="3.03"/><circle class="cls-2" cx="9.14" cy="12.65" r="0.81"/><circle class="cls-1" cx="31.96" cy="12.73" r="3.03"/><circle class="cls-2" cx="31.96" cy="12.65" r="0.81"/><path class="cls-3" d="M7.13,3.21S8.4,6.33,10.57,6.33h22.2"/><line class="cls-3" x1="9.95" y1="9.27" x2="11.36" y2="1.76"/><polyline class="cls-3" points="19.44 12.35 19.44 5.96 17.82 1.39"/><path class="cls-1" d="M37.76,8.94A.94.94,0,1,1,37,7.83"/></g></g></svg>

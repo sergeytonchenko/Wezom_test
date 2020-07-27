@@ -150,8 +150,9 @@
                 
                 &:hover {                    
                     .filterNav__link {
-                        color: #fff;
-                    }                    
+                        color: #fff;                    
+                        
+                    }                   
                 }
 
                 &.is-active {
@@ -160,7 +161,12 @@
                     }
                     .filterNav__link {
                         color: #fff;
-                    }                    
+                    }
+                    .cls-1,.cls-2,.cls-3{
+                        stroke:#ffc925;
+                        opacity: 1;                               
+                    }
+
                 }   
                 
             }
@@ -173,11 +179,17 @@
                 color: #a0a6ad;
                 cursor: pointer;
                 height: 74px;
-            }
 
-            &__icon {
-                margin-right: 15px;
-            }            
+                &:hover {
+                    .cls-1,.cls-2,.cls-3{                        
+                        opacity: 1;                               
+                    }
+                }
+
+                svg {
+                    margin-right: 15px; 
+                }
+            }           
 
             &__border {
                 position: absolute;

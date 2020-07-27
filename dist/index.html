@@ -58,7 +58,8 @@
                             <p>Пароль</p>
                             <input 
                                 class="popup1__enter-password"
-                                type="text"
+                                type="password"
+                                name="password"                                
                                 placeholder="*************">                            
                             <div>
                                 <input class="popup1__enter-remember" type="checkbox" name="" id="q1">
@@ -100,6 +101,22 @@
         </nav>
         <section>
             <div class="header view-port">
+                <div class="popup2">
+                    <span class="popup2__close"></span>
+                    <h2 class="popup2__title">Перезвоните мне</h2>
+                    <p class="popup2__text">Номер телефона</p>
+                    <form action="">
+                        <input
+                            class="popup2__input"                      
+                            type="tel" name="phone"                            
+                            placeholder="+38(0__) ___ - __ - __"
+                            required>
+                        <button class="popup2__btn"  type="submit">
+                            Перезвоните мне
+                        </button>
+
+                    </form>
+                </div>
                 <div class="header__logo">
                     <img src="./img/header__logo.png" alt="header__logo">
                 </div>
@@ -215,8 +232,13 @@
                 <div class="block__main">
                     <div class="block__search">
                         <form class="block__search-form" action="#" method="post">
-                            <input type="text" id="name" name="search"
-                            class="block__search-input" placeholder="Поиск по сайту">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="search"
+                                class="block__search-input"
+                                placeholder="Поиск по сайту"
+                                minlength="2">
                             <select name="select" class="block__search-select">                                
                                 <option value="Все категории" selected>Все категории</option> 
                                 <option value="Ссылка 1">Ссылка 1</option>
@@ -286,41 +308,77 @@
                                 <label for="checkbox" class="filterContent__tabs-btn">Tab1</label>
                             </div>
                             <div class="filterContent__select">
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 1</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 2</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 3</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 4</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                </select>
-                                <select name="select" class="filterContent__select-select">                                
-                                    <option value="Все категории" selected>Select 6</option> 
-                                    <option value="Ссылка 1">Ссылка 1</option>
-                                    <option value="Ссылка 2">Ссылка 2</option>
-                                    <option value="Ссылка 2">Ссылка 3</option>
-                                </select>
+                                <div class="filterContent__select-select">
+                                    <select id="select-1" name="select">                                
+                                        <option value="Все категории" selected>Select 1</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select id="select-2" name="select">                                
+                                        <option value="Все категории" selected>Select 2</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-3" name="select">                                
+                                        <option value="Все категории" selected>Select 3</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>                                        
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-4" name="select">                                
+                                        <option value="Все категории" selected>Select 4</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <select name="select">                                
+                                    </select>
+                                </div>                                
+                                <div class="filterContent__select-select">
+                                    <select id="select-6" name="select">                                
+                                        <option value="Все категории" selected>Select 6</option> 
+                                        <option value="Position 1">Position 1</option>
+                                        <option value="Position 2">Position 2</option>
+                                        <option value="Position 2">Position 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </div>
+                                <div class="filterContent__select-select">
+                                    <p>Цена</p>
+                                    <input id="input-1"
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="50">
+                                    <input id="input-2"
+                                        class="filterContent__select-price"
+                                        type="text"
+                                        placeholder="25000">
+                                </div>
                             </div>
+                            <div class="filterContent__btns">
+                                <button id="btn-clear" class="filterContent__btn-clear">
+                                    <i class="fas fa-times"></i>
+                                    Очистить фильтр
+                                </button>
+                                <button class="filterContent__btn-apply">
+                                    Применить фильтр
+                                </button>
 
-
+                            </div>
                         </form> 
                     </div>
                 </div>
@@ -435,15 +493,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>
                 </div>
                 <div class="product__block">
@@ -526,15 +584,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>
                 </div>
                 <div class="product__block">
@@ -618,15 +676,15 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div> 
                 </div>
                 <div class="product__block">
@@ -701,21 +759,25 @@
                                 Сравнить товар
                             </a>    
                         </button>
-                        <button class="product__trade-wish">
+                        <div class="product__trade-wish">
                             <object
                                 type="image/svg+xml"
                                 data="./img/trade-wish.svg">
-                            </object>
-                            <a href="#" class="product__trade-wish-link">
+                            </object>                           
+                            <p class="product__trade-wish-link btn-wish">
                                 В избранное
-                            </a>
-                        </button>
+                            </p>                             
+                        </div>
                     </div>                     
                 </div> 
             </div>
         </section>
         <footer>
             <div class="footer view-port">
+                <div class="popup3">
+                    <h2>Вы успешно подписаны на рассылку!</h2>
+                    <span class="popup3__close"></span>
+                </div>
                 <div class="footer__block1">
                     <div class="footer__block1-header">
                         <h3 class="footer__block1-title">

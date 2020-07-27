@@ -60,10 +60,13 @@
         margin: 0 30px;
     }
 
-    &__action-digit {
+    &__action-digit-compare,
+    &__action-digit-wish,
+    &__action-digit-basket {
             position: absolute;
             top: -25px;
             left: 12px;
+            display: none;
         
         p {
             position: absolute;

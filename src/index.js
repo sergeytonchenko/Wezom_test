@@ -74,21 +74,39 @@ inputPrice.oninput = () => {
 //Функции Сравнение и Избранное
 const btnWish = document.querySelectorAll(".btn-wish");
 const btnCompare = document.querySelectorAll(".btn-compare");
-const actionDigit = document.getElementById("#compare-number");
-let count = 0;
+const compareDigit = document.getElementById("compare-number");
+const compareBlock = document.querySelector(".header__action-digit-compare");
+const wishDigit = document.getElementById("wish-number");
+const wishBlock = document.querySelector(".header__action-digit-wish");
+let count1 = 1;
+let count2 = 1;
 
 for (let t = 0; t < btnWish.length; t++) {
-    btnWish[t].addEventListener("click" , (e) => {               
+    btnWish[t].addEventListener("click" , (e) => { 
+        
+        if (e.target.textContent === "В избранном") {            
+            wishDigit.innerText = `${ count1 - 1 }`;
+        } else {
         e.target.innerHTML = "В избранном";
-        actionDigit.innerHTML = `${ count++ }`;        
-    })    
+        wishBlock.style.display = "block";
+        wishDigit.innerText = `${ count1++ }`;
+        }              
+    })
+      
 }
 
 for (let t = 0; t < btnCompare.length; t++) {
-    btnCompare[t].addEventListener("click" , (e) => { 
-        e.target.innerHTML = "В сравнении";
-
-    })    
+    btnCompare[t].addEventListener("click" , (e) => {
+        
+        if (e.target.textContent === "В сравнении") {            
+            compareDigit.innerText = `${ count2 - 1 }`;
+        } else {
+            e.target.innerHTML = "В сравнении";
+            compareBlock.style.display = "block";
+            compareDigit.innerText = `${ count2++ }`; 
+        } 
+    })
+         
 }
 
 //Функция валидности email

@@ -73,13 +73,22 @@ inputPrice.oninput = () => {
 
 //Функции Сравнение и Избранное
 const btnWish = document.querySelectorAll(".btn-wish");
+const btnCompare = document.querySelectorAll(".btn-compare");
+const actionDigit = document.getElementById("#compare-number");
+let count = 0;
 
 for (let t = 0; t < btnWish.length; t++) {
-    btnWish[t].addEventListener("click" , (e) => { 
-        console.log (e.target);       
-         e.target.innerHTML = "В избранном";        
-    })
-    
+    btnWish[t].addEventListener("click" , (e) => {               
+        e.target.innerHTML = "В избранном";
+        actionDigit.innerHTML = `${ count++ }`;        
+    })    
+}
+
+for (let t = 0; t < btnCompare.length; t++) {
+    btnCompare[t].addEventListener("click" , (e) => { 
+        e.target.innerHTML = "В сравнении";
+
+    })    
 }
 
 //Функция валидности email

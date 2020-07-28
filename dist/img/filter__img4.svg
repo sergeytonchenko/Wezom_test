@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="29" viewBox="0 0 22 29">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.4;
-      }
-    </style>
-  </defs>
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="22" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAACFklEQVRIibWWzWsUQRDFf6uTGIKuUYhKdl1EE2LAr4P4BfEQhHgS9OI1f6CCOUZQwVwkh4CCoigLfrCIRpdsErIxiSsFr5fO7ExPZ8F36Zqe6jfVr6qrp9TpdEjhInAzPZnCL+BxyOFAAUHfSAILvwFfgKrGGvAOuBvzsVDEO8Af4K9sN0YhS+PbwPmCxdvAc+DzfiIeiohoAJgFbuXtOkvjH8AZoAl8yNn+KDAJXABOAs+AVhHxrsZV4E0g6q+SzT7yAHgJ1N3LUPKKSrGuWv4JDAJ3gGngYN5iN3e0gNiwBsx7O5sC7gMjWcRVj/hYBLmV4StgAdgCjps0aWIjGvOepyOIHaz0nshO0sRGVAK+qxpOKfux2HR+PvGkiIzwBbCs+euRtb0HrtyGRIAI15SQCcnzEFiP4Cs5wxG7qJpehi0pi8A94JDmmxGBzjjjhKfjoggdTOv36h3jwCOgp7l4GHSmaXxZ9kcRpbGkpmOSnI6Qo0tckf02x6cNfJJdyfHpQeKFvxrwc+8OA0cCfgPOSBSRJa6sc5+FsuZqsVEbcQM4C1xS+0tjWIkzPFVXy4Ptfg5p/FqZPgdcc91JKOuOswUrugejkGj7S6rlK+pQrhWOqujbuopCpdYjBYp6A7ihrVc9n4aaeCuHI0iMSsqa91UdiN/9EGYRG+zUWYeyKrFmZBJ0T1MEur79/mIV4v/8YgH/AHVcbrrP+lMtAAAAAElFTkSuQmCC"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"width="22" height="29" viewBox="0 0 22 29"><defs><style>.cls-1,.cls-2{opacity:0.3;fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}</style></defs><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_4" data-name="Layer 4"><polyline class="cls-1" points="5.61 24.73 5.61 27.51 20.95 27.51 20.95 10.65 13.5 5.21 5.61 5.26 5.61 11.24"/><polygon class="cls-1" points="12.75 4.94 5.61 4.97 5.61 1.04 12.75 1 12.75 4.94"/><line class="cls-2" x1="8.14" y1="0.97" x2="8.14" y2="4.47"/><line class="cls-2" x1="10.11" y1="1" x2="10.11" y2="4.5"/><path class="cls-1" d="M5.8,10.17,1.74,16.62A4.79,4.79,0,0,0,5.8,24h0a4.79,4.79,0,0,0,4.05-7.34Z"/><line class="cls-2" x1="8.52" y1="14.5" x2="20.95" y2="14.5"/><line class="cls-2" x1="20.95" y1="20.08" x2="10.53" y2="20.08"/></g></g></svg>

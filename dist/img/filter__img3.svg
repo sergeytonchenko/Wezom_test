@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.4;
-      }
-    </style>
-  </defs>
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACvklEQVRIibWW20tVQRSHv7M5nrTSbkopSVkpRYlPWtJLN6SHIqGg/sQgegiC0sICiSifTMIKTVJISRTU8C4nBr6J4dg5CtKCzezZs26/dZudKxaLVKAqoAVoBhqAWiAHBKElYBaYAiaAjXJqyhnJAx1AO1Co5IW0DowAw8DmbowcA24Bh9wvA+PANLCaIKkGGoGzwH55F4DXwFwlI03AbZFsAe810uZZiip4/xP4ahi7dSAgeenZNiMBwT0NzAN1xv3ILsK1rNFgoN71WUQUjQTF9w1RSOaHBFFgGPOZNWTVFsI5n5xG+oHLnoXQPQ0GMz3p0MCaIerRQKiYX8Abq2hV/lX3H+VZMZQ9yq+pL+gls0zbFR4CuhRY1JOayFxaNMB14AfwRP6C8kPyBL1VefugYFzDc8IQ9Ss4ANxR6DhwEPht3MN7n2j6DXmQ/6SuUHUteRsNy7TN9zGTj+GaM9aR6l2/J004r1yresZF0pyZJOyDpsRIpBYRBBoV2aj7M55TItekvkANmTUekxn7YDYRbE0MDIpsMDHUmvBGuUJSJLWZCSRZSRhIOn/a3nnkGj09XEbur97MJJOsgQ7o4d1ESaOF8Ni10e/B4APgUuJQqq+Yt6vrbLBN++Oh3784Nq4BFxJEHcn+ra1wHrjit031BVoKHX/TIbfiQc5Ge5F4dRW4yHb6DLxLvoZmPO3c2zI345kK0ZsB308CRxPhoOgVMOl+0n1qIPCf8n0gCddU5oUT5s4+nxnR9CSQkS860ec+UrX8OeVr1BX0TmQ204jMnc6jdfPUW4KoNKkRQa/868p3ehb0buTdDDtND3kv9OtZnaMiTuHFxPNyU7hbFAvqLXufzDpNu5xFO9GMCLo1/s/7JFJ6M645TXe6Gb85CDtFUPFmTBGVu+NDDm8Az/dyx0f6738rKe39vwv4Awnb8rK+6sqzAAAAAElFTkSuQmCC"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><defs><style>.cls-1,.cls-3{opacity: 0.3;fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-2{fill:#5b5a5a;}</style></defs><title>Ресурс 2</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_4" data-name="Layer 4"><circle class="cls-1" cx="12.13" cy="12.13" r="11.13"/><circle class="cls-1" cx="12.13" cy="12.13" r="8.34"/><circle class="cls-1" cx="12.13" cy="12.13" r="3.16"/><circle class="cls-2" cx="12.13" cy="12.13" r="0.64"/><line class="cls-3" x1="8.96" y1="12.77" x2="1.98" y2="15.5"/><line class="cls-3" x1="15.47" y1="12.77" x2="22.45" y2="15.5"/><line class="cls-3" x1="12.03" y1="23.25" x2="12.13" y2="15.29"/><line class="cls-3" x1="5.47" y1="3.1" x2="10.25" y2="9.67"/><line class="cls-3" x1="18.5" y1="3.1" x2="13.71" y2="9.67"/></g></g></svg>

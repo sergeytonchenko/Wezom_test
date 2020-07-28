@@ -40,6 +40,17 @@ callClose.addEventListener("click" , () => {
     wrapperBg.style.display = "none";    
 })
 
+//Функция валидации телефона
+const maskPhone = /^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(\+[3][8]\([0][0-9]{2}\)\d{3}[-]{1}\d{2}[-]{1}\d{2})$/;
+const validPhone = document.querySelector('.popup2__input');
+
+const validatePhone = (value) => maskPhone.test(value);  
+
+validPhone.oninput = () => {
+    if (validatePhone(validPhone.value)) validPhone.style.border = '2px solid green';
+    else validPhone.style.border = '2px solid red';
+  };
+
 //Функция валидности Поиска
 const validSearch = document.querySelector('.block__search-input');
 

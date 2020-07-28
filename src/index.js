@@ -19,11 +19,36 @@ close.addEventListener("click" , () => {
 
 //Валидность пароля
 const password = document.querySelector(".popup1__enter-password");
+const emailForm = document.querySelector('.popup1__enter-email');
+const btnFormLogin = document.querySelector('.popup1__enter-btn');
 
 password.oninput = () => {
-    if (password.value.length < 4) password.style.border = '2px solid red';
-    else password.style.border = '2px solid green';    
-}
+    if (password.value.length < 4 ) {
+        password.style.border = '2px solid red';
+        btnFormLogin.disabled = true;
+    } else {
+        password.style.border = '2px solid green';
+        btnFormLogin.disabled = false;
+    }        
+};
+    
+emailForm.oninput = () => {
+    if (validateEmail(emailForm.value)) {
+        emailForm.style.border = '2px solid green';
+        btnFormLogin.disabled = false;
+    } else {
+        emailForm.style.border = '2px solid red';
+        btnFormLogin.disabled = true;
+    }    
+};
+
+
+
+    
+
+    
+
+
 
 // Функция popup Заказ обратного звонка
 const callMe = document.querySelector(".header__button");
@@ -43,20 +68,32 @@ callClose.addEventListener("click" , () => {
 //Функция валидации телефона
 const maskPhone = /^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(\+[3][8]\([0][0-9]{2}\)\d{3}[-]{1}\d{2}[-]{1}\d{2})$/;
 const validPhone = document.querySelector('.popup2__input');
+const btnPhone = document.querySelector('.popup2__btn');
 
 const validatePhone = (value) => maskPhone.test(value);  
 
 validPhone.oninput = () => {
-    if (validatePhone(validPhone.value)) validPhone.style.border = '2px solid green';
-    else validPhone.style.border = '2px solid red';
+    if (validatePhone(validPhone.value)) {
+        validPhone.style.border = '2px solid green';
+        btnPhone.disabled = false;
+    } else {
+        validPhone.style.border = '2px solid red';
+        btnPhone.disabled = true;
+      }
   };
 
 //Функция валидности Поиска
 const validSearch = document.querySelector('.block__search-input');
+const btnSearch = document.querySelector('.block__search-btn');
 
 validSearch.oninput = () => {
-    if (validSearch.value.length < 2) validSearch.style.border = '2px solid red';
-    else validSearch.style.border = '2px solid green';    
+    if (validSearch.value.length < 2) {
+        validSearch.style.border = '2px solid red';
+        btnSearch.disabled = true;
+    } else {
+        validSearch.style.border = '2px solid green';
+        btnSearch.disabled = false;  
+    }   
 }
 
 //Функция переключение Tab1, Tab 2
@@ -108,7 +145,6 @@ inputPrice.oninput = () => {
     else inputPrice.style.border = '2px solid red';
   };
 
-
 //Функции Сравнение и Избранное
 const btnWish = document.querySelectorAll(".btn-wish");
 const btnCompare = document.querySelectorAll(".btn-compare");
@@ -148,14 +184,19 @@ for (let t = 0; t < btnCompare.length; t++) {
 //Функция валидности email
 const emailValid = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 const inputEmail = document.querySelector('.footer__form-email');
+const footerBtnForm = document.querySelector('.footer__form-btn');
 
 const validateEmail = (value) => emailValid.test(value);  
 
 inputEmail.oninput = () => {
-    if (validateEmail(inputEmail.value)) inputEmail.style.border = '2px solid green';
-    else inputEmail.style.border = '2px solid red';
+    if (validateEmail(inputEmail.value)) {
+        inputEmail.style.border = '2px solid green';
+        footerBtnForm.disabled = false;
+    } else {
+        inputEmail.style.border = '2px solid red';
+        footerBtnForm.disabled = true;
+    } 
   };
-
 
 //Функция для Рассылки подписки
 const btnMailing = document.querySelector(".footer__form-btn");

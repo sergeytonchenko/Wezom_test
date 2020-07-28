@@ -42,14 +42,6 @@ emailForm.oninput = () => {
     }    
 };
 
-
-
-    
-
-    
-
-
-
 // Функция popup Заказ обратного звонка
 const callMe = document.querySelector(".header__button");
 const callClose = document.querySelector(".popup2__close");

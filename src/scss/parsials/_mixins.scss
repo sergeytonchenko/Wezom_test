@@ -10,6 +10,13 @@
     list-style: none;
 }
 
+@mixin text-btn ($size) {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $size;
+    font-weight: 700;
+}
+
 
 
  

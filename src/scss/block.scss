@@ -73,7 +73,7 @@
     }
 
     &__main {
-        flex: 2;
+        flex: 3;
     }
 
     &__search {
@@ -108,18 +108,16 @@
         background-color: #ff8900;        
     }
 
-    &__filter {
-        width: 1015px;
-	    height: 374px;
+    &__filter {        
         background-color: #696969;
         margin-top: 20px;        
     }
 
     &__filterNav { 
+        @include clear-list;       
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include clear-list;       
         width: 100%;
 	    height: 74px;
         background-color: #606a76;
@@ -134,8 +132,7 @@
                 
                 &:hover {                    
                     .filterNav__link {
-                        color: #fff;                    
-                        
+                        color: #fff; 
                     }                   
                 }
 

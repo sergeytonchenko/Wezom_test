@@ -119,10 +119,12 @@ function selectTabNav () {
 //Функция сброса select & input
 const btnClear = document.getElementById("btn-clear");
 btnClear.addEventListener("click" , () => {
-    for (let r = 1; r < 7; r++) {
+    for (let r = 1; r < 6; r++) {
         document.getElementById(`select-${r}`)
-        .options[0].selected = 'selected';
-        document.getElementById(`input-${r}`).value = "";        
+        .options[0].selected = 'selected';                      
+    }
+    for (let d = 1; d < 3; d++) {
+        document.getElementById(`input-${d}`).value = "";              
     }    
 })
 

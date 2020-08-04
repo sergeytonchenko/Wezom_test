@@ -2,20 +2,23 @@
 
 .block {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     &__menu {
         display: flex;
+        flex: 1;
         flex-direction: column;
     }
 
     &__menu-hat {
         display: flex;
+        width: 100%;
     }
 
     &__menu-burger {
         position: relative;
-        width: 62px;
-        height: 56px;
+        flex: 1;
         background-color: #db7200;
         
         object {
@@ -25,14 +28,9 @@
         }
     }
 
-    &__menu-header {
-        background-image: -webkit-linear-gradient(left, #ff8500, #ffae00);
-	    background-image: -moz-linear-gradient(left, #ff8500, #ffae00);
-	    background-image: -o-linear-gradient(left, #ff8500, #ffae00);
-	    background-image: -ms-linear-gradient(left, #ff8500, #ffae00);
+    &__menu-header {        
 	    background-image: linear-gradient(to right, #ff8500, #ffae00);
-	    width: 264px;
-        height: 56px;
+	    flex: 4;
         margin-right: 20px;
         
         p {
@@ -44,15 +42,13 @@
     }
 
     &__menu-list {
-        height: 395px;
-        width: 326px;
-        @include clear-list
+        @include clear-list;
+        margin-right: 20px;        
     }
 
-    &__menu-item {
+    &__menu-item {        
         border: 1px solid #f1f1f1;
-        padding-bottom: 14px;
-        padding-top: 20px;
+        padding: 1.2rem 2.3rem;        
 
         &:hover {
             background-color: #f1f1f1;
@@ -60,28 +56,24 @@
             i {
                 color: #808390;                
             }
-        }
-
-        &:nth-child(1) {
-            padding-top: 1.9rem;
-        } 
-
-        &:last-child {
-            padding-bottom: 20px;
-        }
+        }        
     }
 
     &__menu-link {
+        display: flex;
+        justify-content: space-between;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #3b3b3b;
-        padding-left: 2.5rem;
+        color: #3b3b3b;        
 
         i {
-            color: #c0c4d8;
-            margin-left: 152px;
+            color: #c0c4d8;            
         }
+    }
+
+    &__main {
+        flex: 2;
     }
 
     &__search {
@@ -96,33 +88,25 @@
     }
 
     &__search-input {
-        flex-grow: 5;
-        height: 56px;
+        flex-grow: 5;        
         background-color: #f5f5f5;
-        padding-left: 25px;
-       
+        padding: 1.2rem 2rem;
+        border-right: 1px solid #dadada;
     }
 
     &__search-select {          
         flex-grow: 0;
         padding-left: 13px;
-        padding-right: 43px;         
-        height: 56px;
-        border-left: 1px solid #dadada;
+        padding-right: 43px; 
         background: url(../img/arrow.svg) no-repeat right #f5f5f5;
         background-position-x: 114px;
     }    
 
     &__search-btn {
-        flex-grow: 1;        
-        height: 56px;
-        background-color: #ff8900;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #fff;
+        @include text-btn (16px);
+        flex-grow: 1; 
+        background-color: #ff8900;        
     }
-
 
     &__filter {
         width: 1015px;

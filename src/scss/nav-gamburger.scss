@@ -1,6 +1,6 @@
 .nav {
 
-    &__menu-burger {
+    &__burger {
         position: absolute;
         left: 0;
         top: -200px;
@@ -14,7 +14,7 @@
         }
     }
 
-    &__menu-burger-list {
+    &__burger-list {
         @include clear-list;        
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
         align-items: center;  
     }
 
-    &__menu-burger-item {
+    &__burger-item {
         position: relative;        
         padding: 10px 0;
         color: #fff;                
@@ -30,13 +30,13 @@
         &:hover {
             font-weight: 600;            
 
-            .nav__menu-burger-border {
+            .nav__burger-border {
                 transform: scaleX(1.2);
             }
         }
     }
 
-    &__menu-burger-border {
+    &__burger-border {
         display: block;
         position: absolute;
         left: 0;
@@ -128,7 +128,7 @@
     width: 41px;
 }
 
-.checkbox1:checked ~ .nav__menu-burger {    
+.checkbox1:checked ~ .nav__burger {    
         top: 50px;    
 }
 

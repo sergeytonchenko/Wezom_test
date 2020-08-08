@@ -209,6 +209,20 @@ footer {
         display: flex;
         justify-content: start;
         margin-bottom: 6px;
+        width: 100%;
+
+        @media screen and (max-width: 575px) {            
+            flex-direction: column;
+            align-items: center;       
+        }
+    }
+
+    &__logo {
+        color: #ff6c00;
+        letter-spacing: 20px;        
+        @include adaptiv-font(50, 40);        
+        font-style: italic;
+        text-transform: uppercase; 
     }
 
     &__copyright {
@@ -219,11 +233,22 @@ footer {
         margin-left: 24px;
         padding-left: 16px;
         border-left: 1px solid #787878;
+
+        @media screen and (max-width: 575px) {            
+            border-left: none;
+            padding: 0;
+            margin: 15px 0;     
+        }
     }
 
     &__social {
         display: flex;
         margin-left: 217px;
+
+        @media screen and (max-width: 575px) {            
+            margin-left: 0;
+            margin-bottom: 10px;    
+        }
     }
 
     & .social__frame {
@@ -242,7 +267,7 @@ footer {
             .social__link {
                 color: #ffc925;
             }
-        }       
+        }         
     }
 
     & .social__link {
@@ -253,6 +278,11 @@ footer {
     &__dev {
         display: flex;
         margin-left: 226px;
+
+        @media screen and (max-width: 575px) {            
+            margin: 10px 0;
+
+        }
     }
 
     & .dev__text {

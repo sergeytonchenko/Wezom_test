@@ -53,8 +53,56 @@
 }
 
 @media screen and (max-width: 767px) {
+    .block__menu {
+        display: none;
+    }
 
+    .filter {
+
+        &__wrapper {
+        display: flex;        
+        }
+
+        &__burger {
+            display: flex;
+            width: 15%;
+            background-color: #db7200;
+            justify-content: center;
+
+            object {
+                transform: scale(1.2);;
+            }
+        }
+
+        &__nav {
+            width: 85%;
+        }
+    }
 }
 @media screen and (max-width: 575px) {
-    
+
+    html {
+        font-size: 16px;
+    }
+
+    .filter__content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 3rem;  
+        align-items: center;
+        
+        &-select {
+            width: 100%;            
+            justify-content: center;
+        }
+        
+        &-tabs, &-select,
+        &-select:first-child, &-btns  {
+            margin-left: 0 !important;      
+        }
+
+        &-btn-apply {
+            margin-right: 0 !important;
+        }
+    }
 }

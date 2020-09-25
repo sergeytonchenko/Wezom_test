@@ -2,6 +2,10 @@
     background-color: #696969;
     margin-top: 1.25rem;
 
+    &__burger {
+        display: none;
+    }
+
     &__nav { 
         @include clear-list;       
         display: flex;

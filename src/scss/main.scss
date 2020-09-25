@@ -1,22 +1,24 @@
 @import "parsials/mixins";
 @import "parsials/params";
-@import "nav";
-@import "nav-gamburger";
-@import "popup-enter";
-@import "popup-call";
-@import "popup-mailing";
-@import "header";
-@import "block";
-@import "filter-content";
-@import "middle";
-@import "product";
-@import "footer";
+@import "modules/nav";
+@import "modules/nav-gamburger";
+@import "modules/popup-enter";
+@import "modules/popup-call";
+@import "modules/popup-mailing";
+@import "modules/header";
+@import "modules/block";
+@import "modules/filter-content";
+@import "modules/middle";
+@import "modules/product";
+@import "modules/footer";
+@import "media";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;700;900&display=swap');
 
 html, body {
     @include clear;
     width: 100%;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;    
 }
 
 h1, h2, h3, h4, h5, h6, p, input, select {

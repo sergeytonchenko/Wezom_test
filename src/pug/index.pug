@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Wezom test
+  body
+    .wrapper
+      .wrapper__bg
+      include modules/nav
+      include modules/header
+      main
+        section
+          .block.view-port
+            include modules/block-menu
+            .block__main
+              include modules/block-search
+              include modules/block-filter
+        section
+        section
+        section
+
+    script(src="https://kit.fontawesome.com/13fd77a47d.js" crossorigin="anonymous")

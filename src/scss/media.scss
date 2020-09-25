@@ -1,0 +1,60 @@
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+
+    .search__select {
+        background-position-x: 8.5rem;
+    }
+
+    .filter__content-select {
+        margin-left: 2.5rem;
+        margin-right: 0;
+
+        &:first-child {
+            margin-left: 2.5rem;
+        }
+
+        &:nth-child(5) {
+            display: none;
+        }
+    }
+
+    .filter__content-btn-apply {
+        margin-right: 5.7rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .filter__nav-link {
+        font-size: 0;
+        
+        svg {
+            margin-right: 0; 
+        }
+    }
+
+    .filter__content {
+
+        &-tabs {
+            margin-left: 30%; 
+        }
+
+        &-select,
+        &-select:first-child, &-btns  {
+            margin-left: 4.5rem;      
+        }
+
+        &-btn-apply {
+            margin-right: 4.5rem;
+        }
+    }   
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 575px) {
+    
+}

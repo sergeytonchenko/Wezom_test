@@ -103,7 +103,7 @@ function selectTabs () {
 }
 
 //Функция переключение табов в панели навигации
-const tabNav = document.querySelectorAll('.filterNav__item');
+const tabNav = document.querySelectorAll('.filter__nav-item');
 
 tabNav.forEach( item => {
     item.addEventListener('click', selectTabNav)

@@ -1,0 +1,82 @@
+nav
+  .nav.view-port
+    ul.nav__menu
+      li.nav__item
+        a.nav__link(href='#')
+          | Главная
+          span.nav__menu-border
+      li.nav__item
+        a.nav__link(href='#')
+          | О компании
+          span.nav__menu-border
+      li.nav__item
+        a.nav__link(href='#')
+          | Ссылка 1
+          span.nav__menu-border
+      li.nav__item
+        a.nav__link(href='#')
+          | Ссылка 2
+          span.nav__menu-border
+      li.nav__item
+        a.nav__link(href='#')
+          | Ссылка 3
+          span.nav__menu-border
+    .nav__gamburger
+      input#checkbox1.checkbox1.visuallyHidden(type='checkbox')
+      label(for='checkbox1')
+        .hamburger.hamburger1
+          span.bar.bar1
+          span.bar.bar2
+          span.bar.bar3
+          span.bar.bar4
+      .nav__burger
+        ul.nav__burger-list
+          li.nav__burger-item
+            | Главная
+            span.nav__burger-border
+          li.nav__burger-item
+            | О компании
+            span.nav__burger-border
+          li.nav__burger-item
+            | Ссылка 1
+            span.nav__burger-border
+          li.nav__burger-item
+            | Ссылка 2
+            span.nav__burger-border
+          li.nav__burger-item
+            | Ссылка 3
+            span.nav__burger-border
+    button.nav__button
+      img.nav__icon(src='./img/nav__man.png' alt='nav__man')
+      |                     Вход
+    .popup1
+      .popup1__enter
+        form.popup1__enter-form(action='')
+          h2.popup1__enter-title Вход в личный кабинет
+          p Ваш email
+          input.popup1__enter-email(type='text' placeholder='mikel_ivanov98@gmail.com')
+          p Пароль
+          input.popup1__enter-password(type='password' name='password' placeholder='*************')
+          div
+            input#q1.popup1__enter-remember(type='checkbox' name='')
+            label(for='q1') Запомнить меня
+          div
+            a.popup1__enter-link(href='')
+              | Забыли пароль?
+            a.popup1__enter-link(href='')
+              | Регистрация
+          button.popup1__enter-btn(type='submit')
+            | Войти в личный кабинет
+      .popup1__enter-social
+        h2.popup1__enter-social-title
+          | Войти с помощью
+        button.popup1__enter-facebook
+          i.fab.fa-facebook-f
+          | Facebook
+        button.popup1__enter-twitter
+          i.fab.fa-twitter
+          | Twitter
+        button.popup1__enter-google
+          i.fab.fa-google
+          | Google
+        span.popup1__enter-close

@@ -1,0 +1,39 @@
+header
+  .header.view-port
+    .popup2
+      span.popup2__close
+      h2.popup2__title Перезвоните мне
+      p.popup2__text Номер телефона
+      form(action='')
+        input.popup2__input(type='tel' name='phone' placeholder='+38(0__) ___ - __ - __' required='')
+        button.popup2__btn(type='submit')
+          | Перезвоните мне
+    h1.header__logo Test
+    .header__call
+      a.header__phone(href='#') +380 98 170 00 740
+      a.header__phone(href='#') +380 98 170 00 740
+      button.header__button
+        img.header__icon(src='./img/header__phone.png' alt='header__phone')
+        | Перезвонить мне
+    .header__actions
+      .header__action
+        .header__action-digit-compare
+          span
+            object(type='image/svg+xml' data='./img/digits.svg')
+          p#compare-number
+        object(type='image/svg+xml' data='./img/action_compare.svg')
+        p.header__text Сравнение
+      .header__action
+        .header__action-digit-wish
+          span
+            object(type='image/svg+xml' data='./img/digits.svg')
+          p#wish-number
+        object(type='image/svg+xml' data='./img/action_favorites.svg')
+        p.header__text Избранное
+      .header__action
+        .header__action-digit-basket
+          span
+            object(type='image/svg+xml' data='./img/digits.svg')
+          p 5
+        object(type='image/svg+xml' data='./img/action_basket.svg')
+        p.header__text Корзина

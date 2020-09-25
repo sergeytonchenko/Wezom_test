@@ -1,0 +1,15 @@
+@import "block-menu";
+@import "block-search";
+@import "filter-nav";
+@import "filter-content";
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+       
+    &__main {
+        flex: 3;
+    }    
+
+}

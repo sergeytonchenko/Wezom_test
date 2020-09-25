@@ -101,6 +101,15 @@
             margin-left: 0 !important;      
         }
 
+        &-btns {
+            flex-direction: column;
+            padding: 0;            
+        }
+
+        &-btn-clear, &-btn-apply {
+            margin-bottom: 1rem;
+        }
+
         &-btn-apply {
             margin-right: 0 !important;
         }

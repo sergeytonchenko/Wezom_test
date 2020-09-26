@@ -75,8 +75,8 @@ validPhone.oninput = () => {
   };
 
 //Функция валидности Поиска
-const validSearch = document.querySelector('.block__search-input');
-const btnSearch = document.querySelector('.block__search-btn');
+const validSearch = document.querySelector('.search__input');
+const btnSearch = document.querySelector('.search__btn');
 
 validSearch.oninput = () => {
     if (validSearch.value.length < 2) {
@@ -89,7 +89,7 @@ validSearch.oninput = () => {
 }
 
 //Функция переключение Tab1, Tab 2
-const tabs = document.querySelectorAll('.filterContent__tab');
+const tabs = document.querySelectorAll('.filter__content-tab');
 
 tabs.forEach( item => {
     item.addEventListener('click', selectTabs)

@@ -3,6 +3,14 @@
         font-size: 14px;
     }
 
+    .nav {
+        padding-left: 5px;        
+    }
+
+    .menu__burger object {
+            left: 1.2rem;
+    }
+
     .search__select {
         background-position-x: 8.5rem;
     }
@@ -23,9 +31,17 @@
     .filter__content-btn-apply {
         margin-right: 5.7rem;
     }
+
+    .middle {
+        padding: 1.3rem 1rem 0;
+    }    
 }
 
 @media screen and (max-width: 991px) {
+    .menu__burger object {
+        left: 0.8rem;
+    }
+
     .filter__nav-link {
         font-size: 0;
         
@@ -78,17 +94,44 @@
             width: 85%;
         }
     }
+
+    .middle__link {        
+        font-size: 1.2rem;
+    }
 }
+
 @media screen and (max-width: 575px) {
 
     html {
         font-size: 16px;
     }
 
+    .nav__menu {
+        display: none;        
+    }
+
+    .search__select {
+        display: none;
+    }
+
+    .search__input {
+        width: 80%;
+        flex-grow: 0;
+    }
+
+    .search__btn {        
+        width: 20%;
+        flex-grow: 0;
+    }
+
+    .filter__nav-link svg {
+        transform: scale(0.85);
+    }
+
     .filter__content {
         display: flex;
         flex-direction: column;
-        padding: 1rem 3rem;  
+        padding: 1rem 2rem;  
         align-items: center;
         
         &-select {
@@ -109,11 +152,24 @@
         &-btn-clear, &-btn-apply {
             margin-bottom: 1rem;
             font-size: 1rem;            
-            padding: 1rem 5.5rem;
+            padding: 1rem 3.5rem;
         }
 
         &-btn-apply {
             margin-right: 0 !important;
+        }
+    }
+
+    .middle { 
+        padding: 1rem 1rem 0 !important;
+        height: 2rem;
+
+        &__title {                    
+            font-size: 1rem;        
+        }
+
+        &__link {        
+            font-size: 0.9rem !important;
         }
     }
 }

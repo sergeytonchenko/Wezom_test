@@ -9,16 +9,7 @@ nav {
     justify-content: space-between; 
     height: 50px;
     
-    @media screen and (max-width: 1199px) {
-        padding-left: 5px;        
-    }
-
     &__menu {
-
-        @media screen and (max-width: 575px) {
-            display: none;        
-        }
-
         @include clear-list;
         display: flex;
         flex-basis: 460px;

@@ -2,6 +2,10 @@
     background-color: #696969;
     margin-top: 1.25rem;
 
+    &_wrapper {
+        width: 100%;
+    }
+
     &__burger {
         display: none;
     }

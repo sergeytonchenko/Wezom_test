@@ -48,7 +48,7 @@ const callClose = document.querySelector(".popup2__close");
 const popup2 = document.querySelector(".popup2");
 
 callMe.addEventListener("click" , () => {
-    popup2.style.display = "block";
+    popup2.style.display = "flex";
     wrapperBg.style.display = "block";
 })
 
@@ -130,7 +130,7 @@ btnClear.addEventListener("click" , () => {
 
 //Функция валидации Цены
 const validPrice = /(^[0-9]{1}|[1-9]{1}[0-9]$)/;
-const inputPrice = document.querySelector('.filterContent__select-price');
+const inputPrice = document.querySelector('.filter__content-price');
 
 const validatePrice = (value) => validPrice.test(value);  
 
@@ -139,7 +139,7 @@ inputPrice.oninput = () => {
     else inputPrice.style.border = '2px solid red';
   };
 
-//Функции Сравнение и Избранное
+//Функции Корзина, Сравнение и Избранное
 const btnWish = document.querySelectorAll(".btn-wish");
 const btnCompare = document.querySelectorAll(".btn-compare");
 const compareDigit = document.getElementById("compare-number");
@@ -174,6 +174,7 @@ for (let t = 0; t < btnCompare.length; t++) {
         } 
     })         
 }
+
 
 //Функция валидности email
 const emailValid = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;

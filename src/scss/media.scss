@@ -7,6 +7,19 @@
         padding-left: 5px;        
     }
 
+    .header {
+        padding: 2rem 1rem;
+
+        &__logo {
+            flex: 0;                   
+        }
+
+        &__call {
+            flex: 3;            
+            flex-shrink: 0;        
+        }
+    }
+
     .menu__burger object {
             left: 1.2rem;
     }
@@ -83,6 +96,25 @@
 }
 
 @media screen and (max-width: 991px) {
+    .header {
+
+        &__logo {
+            order: 1;
+            flex: 1;
+            text-align: center;                   
+        }
+
+        &__call {
+            order: 3;
+            margin-top: 10px;
+            min-width: 100%;
+            justify-content: center;                   
+        }
+
+        &__actions {
+            order: 2;                   
+        }
+    }
     .menu__burger object {
         left: 0.8rem;
     }
@@ -124,6 +156,10 @@
         &__pictogram {
             margin-right: 5rem;
         }
+    }
+
+    footer {
+        margin-top: 0;
     }
 
     .footer {        
@@ -227,9 +263,42 @@
         display: none;        
     }
 
-    .header__actions {
-        padding: 0 1rem;
+    .header {
+        padding: 10px 0;
+
+        &__call {            
+            flex-direction: column;
+        }
+
+        &__phone {
+            text-align: center;            
+        }
+
+        &__actions {            
+            padding: 0 1rem;
+            margin-top: 2rem;            
+        }
+
+        &__action {            
+            padding-right: 0.5rem;            
+        }
     }
+
+    .popup2 {
+        display: none;
+        width: calc(100% - 4rem);
+        left: 0;
+
+        &__close {            
+            right: 20px;
+            top: 10px;
+
+            &:before, &:after {                
+                background-color: #ccc;
+                }
+        }
+    }
+    
 
     .search__select {
         display: none;
@@ -342,7 +411,23 @@
 
         & .block2__title, & .block3__title,
         & .block4__title {        
-            font-size: 1rem;
-        }  
+            font-size: 0.8rem;
+        }
+
+        & .social__frame {
+            margin-right: 5px;
+        }
+        
+        &__logo, &__social {
+            width: 60% !important;            
+        }
+
+        &__copyright, &__dev {          
+            width: 40% !important;
+        }
+
+        & .dev__logo, & .dev__text {
+            padding: 0;
+        }
     }
 }

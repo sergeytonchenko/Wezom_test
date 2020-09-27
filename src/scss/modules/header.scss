@@ -4,52 +4,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;    
-    padding: 33px 0;
+    padding: 2rem 0;
 
-    @media screen and (max-width: 575px) {        
-        padding: 10px 0;                
-    }
-    
     &__logo {
         flex: 1;
         color: #ff6c00;
         letter-spacing: 20px;        
         @include adaptiv-font(50, 40);        
         font-style: italic;
-        text-transform: uppercase;        
-
-        @media screen and (max-width: 1199px) {
-            flex: 0;                   
-        }
-
-        @media screen and (max-width: 768px) {
-            order: 1;
-            flex: 1;
-            text-align: center;                   
-        }
-        
+        text-transform: uppercase;
     }
 
     &__call {
         display: flex;        
         flex: 2;
-        min-width: 575px;        
-
-        @media screen and (max-width: 1199px) {
-            flex: 3;            
-            flex-shrink: 0;        
-        }
-
-        @media screen and (max-width: 768px) {
-            order: 3;
-            margin-top: 10px;
-            min-width: 100%;
-            justify-content: center;                   
-        }
-
-        @media screen and (max-width: 575px) {            
-            flex-direction: column;
-        }
+        min-width: 575px; 
     }
 
     &__phone {
@@ -59,10 +28,6 @@
         font-weight: 700;
         font-style: italic;
         color: #000000;
-
-        @media screen and (max-width: 575px) {
-            text-align: center;            
-        }
 
         &:hover {
             text-shadow: 1px 2px 4px rgba(42, 32, 187, 0.63);
@@ -86,12 +51,7 @@
     &__actions {
         display: flex;
         justify-content: space-around;
-        flex: 1;  
-        
-        @media screen and (max-width: 768px) {
-            order: 2;                   
-        }
-        
+        flex: 1; 
     }
 
     &__action {        
@@ -100,18 +60,14 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        
-        @media screen and (max-width: 575px) {
-            padding-top: 30px;
-        }
     }
 
     &__action-digit-compare,
     &__action-digit-wish,
     &__action-digit-basket {
             position: absolute;
-            top: -25px;
-            left: 12px;
+            top: -28px;
+            left: 15px;
             display: none;
         
         p {

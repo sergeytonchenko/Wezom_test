@@ -4,36 +4,40 @@
     top: 150px;
     left: 45%;
     z-index: 10;
-    width: 378px;
-	height: 283px;
-    background-color: #fff;    
+    width: 300px;
+	// height: 220px;
+    background-color: #fff;
+    padding: 2rem 3rem 2rem 2rem;    
+    flex-direction: column;     
     
     &__title {
-        font-size: 24px;
+        font-size: calc(24rem / 16);
         font-weight: 700;
         color: #3b3b3b;
-        margin-top: 30px;
-        margin-left: 35px;
         letter-spacing: -0.5px;
+        padding-bottom: 1.9rem;
         }
 
     &__text {
-        font-size: 14px;
+        font-size: calc(14rem / 16);
         color: #3b3b3b;
-        margin-top: 30px;
-        margin-left: 36px;
+        padding-bottom: 0.8rem;        
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__input {
-        width: 284px;
-        height: 40px;
+        width: calc(100% - 2rem);        
         background-color: #fff;
-        font-size: 16px;
+        font-size: 1rem;
         color: #000;
         border: 1px solid #d2d2d2;
-        margin-top: 12px;
-        padding-left: 14px;
-        margin-left: 36px;
+        padding: 0.5rem 1rem;
+        margin-bottom: 2rem;
 
         &::placeholder {
             font-size: 16px;
@@ -42,15 +46,12 @@
     }
 
     &__btn {
-        width: 210px;
-        height: 50px;
+        padding: 1rem 2.8rem;
         background-color: #ff8900;
-        font-size: 14px;
+        font-size: calc(14rem / 16);
         color: #fff;
         text-align: center;
-        cursor: pointer;
-        margin-top: 29px;
-        margin-left: 88px;
+        cursor: pointer;        
     }
 
     &__close {

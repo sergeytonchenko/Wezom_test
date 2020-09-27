@@ -4,7 +4,7 @@ header
       span.popup2__close
       h2.popup2__title Перезвоните мне
       p.popup2__text Номер телефона
-      form(action='')
+      form(action='').popup2__form
         input.popup2__input(type='tel' name='phone' placeholder='+38(0__) ___ - __ - __' required='')
         button.popup2__btn(type='submit')
           | Перезвоните мне
@@ -34,6 +34,6 @@ header
         .header__action-digit-basket
           span
             object(type='image/svg+xml' data='./img/digits.svg')
-          p 5
+          p#basket-number
         object(type='image/svg+xml' data='./img/action_basket.svg')
         p.header__text Корзина

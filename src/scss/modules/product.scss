@@ -1,20 +1,23 @@
 .product {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 61px !important;
+    justify-content: space-between;           
 
     &__block {
+        padding: 1rem 0.5rem 1rem 1rem;
         width: 25%;
         border: 1px solid #dbdbdb;
+        border-right: none;        
+
+        &:last-child {
+            border-right: 1px solid #dbdbdb;
+        }
     }
 
     &__mark {
-        @include clear;
-        margin: 20px 0 0 8px;
-        width: 79px;
-	    height: 22px;
+        @include clear;                
+        padding: 0.2rem 1.5rem;
         background-color: #f2f2f2;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #848484;
         
         &:hover {
@@ -24,13 +27,14 @@
     }
 
     &__title {
-        margin: 15px 0 0 8px;   
-        font-size: 17px;
+        margin-top: 1rem;   
+        font-size: 1rem;
 	    text-decoration: underline;
         color: #3b3b3b;        
-        line-height: 26px;
+        line-height: 1.625rem;
         font-weight: 400;
         cursor: pointer;
+        height: 4rem;
         
         &:hover {
             text-decoration: none;
@@ -39,7 +43,7 @@
 
     &__subtitle {
         display: flex;
-        margin: 9px 0 0 11px;
+        align-items: flex-end;      
     }
 
     &__rating {
@@ -48,7 +52,7 @@
 
         & label {
             color: #a4a4a4;
-            font-size: 13px;
+            font-size: 0.8rem;
             margin-right: 1px;
         }
         
@@ -75,28 +79,30 @@
     }
 
     &__review {
-        font-size: 13px;
+        font-size: 0.8rem;
 	    text-decoration: underline;
         color: #9b9b9b;
-        margin: 3px 0 0 11px;        
+        margin-left: 0.7rem;        
     }
 
     &__stock {
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #757575;
-        margin: 4px 0 0 31px;
+        margin-left: 2rem;
     }
     
 
     &__content {
         display: flex;
+        width: 100%;
+        margin-top: 1.5rem;        
     }
 
     &__pictogram {
         display: flex;
         flex-direction: column;
         align-items: center;                
-        margin: 21px 31px 0 7px;
+        margin-right: 2rem;
 
         span {
             margin-bottom: 1.2rem;
@@ -104,20 +110,18 @@
         }
         span:last-child {
             margin-bottom: 0;             
-        }
-        
+        }        
     }
 
     &__pictogram-text {
-        font-size: 10px;
+        font-size: calc(10rem / 16);
 	    text-transform: uppercase;
         color: #91959a;
         margin-top: 4px;
     }
 
-    &__picture {
-        margin-top: 24px;
-        height: 200px;
+    &__picture {        
+        height: 12.5rem;
         margin-bottom: 2px;       
     }
 
@@ -129,7 +133,7 @@
     &__ad-icon {
         display: flex;
         position: relative;
-        margin-left: -12px;
+        margin-left: -0.75rem;
 
         span {
             position: absolute;
@@ -141,7 +145,7 @@
     }
 
     &__ad-text {        
-        font-size: 10px;
+        font-size: calc(10rem / 16);
 	    font-weight: bold;
 	    text-transform: uppercase;
 	    color: #fff;
@@ -155,12 +159,16 @@
 
     &__price-new, &__price-uah {        
         font-style: italic;
-        font-size: 30px;
+        font-size: calc(30rem / 16);
         text-transform: uppercase;
         font-weight: 700;
         color: #3b3b3b;
-        margin-left: 9px; 
-    }  
+        margin-left: calc(9rem / 16); 
+    }    
+    
+    &__price-uah {
+        padding-bottom: 2px;
+    }
     
     &__price-new {
         display: flex;
@@ -168,19 +176,20 @@
     }
 
     &__price-uah {
-        font-size: 18px;        
+        font-size: calc(18rem / 16);        
     }
 
     &__price-old {
-        font-size: 16px;
+        font-size: 1rem;
         font-style: italic;
         font-weight: 700; 
-        margin-right: 15px;       
+        margin-right: 1rem;       
 	    text-transform: uppercase;
         color: #989898;
         text-decoration-line: line-through;
         text-decoration-style: solid;
         text-decoration-color: #e00000;
+        padding-bottom: 2px;
     }
 
     &__btn {
@@ -193,16 +202,15 @@
 	    background-image: -o-linear-gradient(left, #ff8500, #ffae00);
 	    background-image: -ms-linear-gradient(left, #ff8500, #ffae00);
 	    background-image: linear-gradient(to right, #ff8500, #ffae00);
-	    width: 210px;
-        height: 50px;
-        font-size: 14px;
+	    padding: 0.8rem 1.8rem;
+        font-size: calc(14rem / 16);
 	    font-weight: bold;
 	    text-transform: uppercase;
         color: #fff;
-        margin: 19px auto 13px;
+        margin: 1.2rem auto 0.8rem;
 
         object {
-            margin-right: 15px;
+            margin-right: 1rem;
         }
         
         &:hover {
@@ -217,7 +225,7 @@
     &__trade {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     &__trade-compare, &__trade-wish {
@@ -236,8 +244,8 @@
     }
 
     &__trade-wish-link, &__trade-compare-link {
-        margin-left: 10px;
-        font-size: 14px;
+        margin-left: calc(10rem / 16);
+        font-size: calc(14rem / 16);
         text-decoration: underline;
         color: #3b3b3b;
         cursor: pointer;        

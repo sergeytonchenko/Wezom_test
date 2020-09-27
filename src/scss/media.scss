@@ -301,8 +301,8 @@
     }
 
     .popup2 {        
-        width: calc(100% - 4rem);
-        left: 0;
+        width: calc(100% - 4rem) !important;
+        left: 0 !important;
 
         &__close {            
             right: 20px;

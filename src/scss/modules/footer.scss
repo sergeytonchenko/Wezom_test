@@ -1,50 +1,53 @@
 footer {
     background-color: #696969;
+    margin-top: calc(60rem / 16);
 }
 
 .footer {
     position: relative;
     display: flex;
     flex-wrap: wrap;    
-    width: 100%;
-
-    &__block1 {
-        width: 42%;
-        margin-top: 33px;
-
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            padding: 0 10px;        
-        }  
+    width: 100%;     
+    
+    &__block1, &__block2, &__block3, &__block4 {
+        padding: 2rem 1rem;
     }
 
-    & .block1__header {        
+    &__block1 {
+        width: calc(50% - 7rem);
+        padding-right: 6rem; 
+    }
+
+
+    & .block1__header, & .block2__header,
+    & .block3__header, & .block4__header {        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         border-bottom: 1px solid #7a7a7a;        
-    }
+    }     
 
-    & .block1__title {
+    & .block1__title, & .block2__title,
+    & .block3__title,& .block4__title {
         position: relative;
-        margin-bottom: 10px;
-        font-size: 20px;
+        margin-bottom: calc(10rem / 16);
+        font-size: calc(20rem / 16);
         font-weight: 400;
         color: #cbcbcb;
         
         span {
             position: absolute;
-            bottom: -11px;
+            bottom: calc(-11rem / 16);
             display: block;
             height: 1px;
             width: 100%;
             background-color: #ff8500;
         }
-    }
+    }    
 
     & .block1__text1 {
-        margin-top: 30px;
+        margin-top: calc(30rem / 16);
         letter-spacing: -0.8px;
         @include adaptiv-font(20, 14);
         font-weight: 700;
@@ -54,7 +57,7 @@ footer {
     }
     
     & .block1__text2 {
-        margin-top: 5px;
+        margin-top: calc(5rem / 16);
         letter-spacing: -1.2px;
         @include adaptiv-font(26, 18);  
 	    text-transform: uppercase;
@@ -65,7 +68,7 @@ footer {
     &__form {
         display: flex;
         width: 100%;
-        margin-top: 11px;
+        margin-top: calc(11rem / 16);
 
         @media screen and (max-width: 575px) {
            flex-direction: column;
@@ -75,7 +78,7 @@ footer {
 
     &__form-email {
         width: 68%;
-        font-size: 14px;
+        font-size: calc(14rem / 16);
         padding: 1rem 2rem;
 
         @media screen and (max-width: 575px) {
@@ -85,7 +88,7 @@ footer {
         }
 
         &::placeholder {
-            font-size: 14px;
+            font-size: calc(14rem / 16);
 	        color: #9c9c9c;
         }
     }
@@ -93,78 +96,15 @@ footer {
     &__form-btn {
         width: 32%;
         background-color: #ff8900;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: #fff;
-
-        @media screen and (max-width: 575px) {
-            width: 100%;
-            padding: 1rem 0;        
-        }
+        color: #fff;        
     }
 
     &__block2, &__block3, &__block4 {
-        width: calc(46% / 3); 
-        
-        @media screen and (max-width: 768px) {
-            width: calc(90% / 3);
-            padding: 0 10px;       
-        }
-
-        @media screen and (max-width: 575px) {
-            width: 100%;                  
-        }
-    }
-
-    &__block2 {
-        margin-left: 120px;
-        margin-right: 20px;
-
-        @media screen and (max-width: 768px) {
-            margin-left: 0;
-            margin-right: 0;
-                   
-        }
-    }
-
-    &__block3 {
-        margin-right: 20px;
-
-        @media screen and (max-width: 768px) {            
-            margin-right: 0;       
-        }
-    }
-
-    & .block2__header,
-    & .block3__header,
-    & .block4__header {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-        margin-top: 33px;                
-        border-bottom: 1px solid #7a7a7a;
-    }
-
-    & .block2__title,
-    & .block3__title,
-    & .block4__title {
-        position: relative;
-        margin-bottom: 10px;
-        font-size: 20px;
-        font-weight: 400;
-        color: #cbcbcb;
-        
-        span {
-            position: absolute;
-            bottom: -11px;
-            display: block;
-            height: 1px;
-            width: 100%;
-            background-color: #ff8500;
-        }
-    }
+        width: calc((50% / 3) - 2rem);         
+    }  
 
     & .block2__list,
     & .block3__list,
@@ -173,24 +113,19 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: 29px;
-
-        @media screen and (max-width: 575px) {            
-            flex-direction: row;
-            justify-content: space-between;       
-        }
+        margin-top: calc(29rem / 16);
     }
 
     & .block2__item,
     & .block3__item,
     & .block4__item {
-        padding-bottom: 18px;       
+        padding-bottom: calc(18rem / 16);       
     }
 
     & .block2__link,
     & .block3__link,
     & .block4__link {
-        font-size: 13px;
+        font-size: calc(13rem / 16);
 	    text-decoration: underline;
         color: #fff;
 
@@ -201,22 +136,21 @@ footer {
 
     &__line {
         @include clear;
-        display: block;
-        margin-top: 16px;
-        margin-bottom: 27px;
+        display: block;        
+        margin-bottom: calc(27rem / 16);
         width: 100%;
         height: 1px;
         background-color: #dbdbdb;
         
         @media screen and (max-width: 768px) {            
-            margin: 10px 0;
+            margin: 0.625rem 0;
         }
     }
 
     &__block5 {
         display: flex;
         justify-content: start;
-        margin-bottom: 6px;
+        margin-bottom: calc(6rem / 16);
         width: 100%;
 
         @media screen and (max-width: 768px) { 
@@ -230,19 +164,18 @@ footer {
 
     &__logo {
         color: #9197a3;
-        letter-spacing: 20px;        
+        letter-spacing: calc(20rem / 16);        
         @include adaptiv-font(50, 40);        
         font-style: italic;
         text-transform: uppercase; 
     }
 
     &__copyright {
-        font-size: 12px;
+        font-size: calc(12rem / 16);
         color: #a0a9b2;
         font-style: normal;
-        padding-top: 15px;
-        margin-left: 24px;
-        padding-left: 16px;
+        padding: 0 1rem;
+        margin-left: 1.5rem;
         border-left: 1px solid #787878;
 
         @media screen and (max-width: 768px) {  
@@ -252,21 +185,21 @@ footer {
         }
 
         @media screen and (max-width: 575px) {
-            margin: 15px 0;                
+            margin: 1rem 0;                
         }
     }
 
     &__social {
         display: flex;
-        margin-left: 217px;
+        margin-left: calc(217rem / 16);
 
         @media screen and (max-width: 768px) {            
             margin: 0;
-            margin-right: 15px;   
+            margin-right: 1rem;   
         }
 
         @media screen and (max-width: 575px) {  
-            margin-bottom: 10px;    
+            margin-bottom: calc(10rem / 16);    
         }
     }
 
@@ -274,8 +207,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 49px;
-        height: 49px;
+        width: calc(49rem / 16);
+        height: calc(49rem / 16);
         border: 1px solid #7b8092;
         margin-right: 8px;
         text-align: center;
@@ -296,7 +229,7 @@ footer {
 
     &__dev {
         display: flex;
-        margin-left: 226px;
+        margin-left: calc(226rem / 16);
 
         @media screen and (max-width: 768px) {            
             margin: 0;
@@ -312,8 +245,8 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         border-left: 1px solid #787878;
-        margin-left: 20px;
-        padding-left: 16px;
+        margin-left: calc(20rem / 16);
+        padding-left: 1rem;
 
         @media screen and (max-width: 768px) {            
             margin-left: 9px;
@@ -321,12 +254,12 @@ footer {
         }
 
         small {
-            font-size: 12px;
+            font-size: calc(12rem / 16);
 	        color: #a0a9b2;
         }
 
         p {
-            font-size: 14px;
+            font-size: calc(14rem / 16);
             color: #fff; 
         }
     }

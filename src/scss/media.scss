@@ -50,6 +50,24 @@
             margin-right: 3rem;
         }
     }
+
+    .footer { 
+        
+        &__block1 {
+            width: calc(50% - 5rem);
+            padding-right: 4rem; 
+        }
+
+        &__form-email {           
+            font-size: 1rem;
+        }
+
+        & .block2__link,
+        & .block3__link,
+        & .block4__link {
+            font-size: 1rem;	          
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -94,6 +112,19 @@
         &__pictogram {
             margin-right: 5rem;
         }
+    }
+
+    .footer {        
+
+        &__block1 {
+            width: 100%;
+            padding-right: 1rem; 
+        }
+
+        &__block2, &__block3, &__block4 {           
+            width: calc((100% / 3 - 2rem));
+            padding: 1rem 1rem;       
+        } 
     }
 
 }
@@ -212,6 +243,8 @@
         
         &__block {
             width: 100% !important;
+            border-left: none;
+            border-right: none;            
 
             &:first-child {
                 border-bottom: none;
@@ -241,5 +274,19 @@
         &__btn {            
             padding: 0.8rem 3.5rem;
         }
+    }
+
+    .footer {
+
+        &__form-btn {
+            width: 100%;
+            padding: 1rem 0;
+            margin-top: 0.5rem;                   
+        }
+
+        & .block2__title, & .block3__title,
+        & .block4__title {        
+            font-size: 1rem;
+        }        
     }
 }

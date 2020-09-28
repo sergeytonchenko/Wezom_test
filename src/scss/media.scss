@@ -102,6 +102,12 @@
             width: calc(30% - 2rem);
         }
     }
+
+    .popup3 { 
+        top: 25%;
+        left: 25%;
+    }    
+        
 }
 
 @media screen and (max-width: 991px) {
@@ -231,6 +237,10 @@
         }
     }
 
+    .popup3 { 
+        top: 25%;
+        left: 18%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -286,6 +296,11 @@
             width: 50%;
             margin-bottom: 1rem;
         }    
+    }
+
+    .popup3 { 
+        top: 25%;
+        left: 8%;
     }
 }
 
@@ -512,8 +527,11 @@
 
     .popup3 {
         width: 100%;
-        left: 0;
+        left: 0 !important;
         font-size: 1rem;
-        margin-top: 30px;
+
+        & h2 {
+            margin-top: 23px;
+        }
     }
 }

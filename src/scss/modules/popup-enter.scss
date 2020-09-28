@@ -1,75 +1,87 @@
 .popup1 {
     position: fixed;
-    width: 755px;
-	height: 431px;
+    width: 755px;	
     background-color: #fff;
     z-index: 15;
     top: 20vh;
     left: 30%;        
     display: none;
 
-    &__enter {        
+    &__enter {
+        position: relative;        
         display: flex;
         flex-direction: column;        
         align-items: center;
-        justify-content: center;        
-        width: 50%;
+        justify-content: center;
+        width: 100%;        
+        width: calc(50% - 4.7rem);
+        padding: 2.3rem 2rem 2rem 2.7rem;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 10%;
+            right: -2%;
+            height: 80%;
+            width: 1px;
+            background-color: #dbdbdb;
+        }
     }    
 
     &__enter-form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;                       
-        height: 85%;    
-        margin-left: 22px;  
+        align-items: flex-start;
+        width: 100%; 
 
         p, label {
-            font-size: 14px;
+            font-size: calc(14rem / 16);
             color: #3b3b3b;
             font-weight: 700;
-            margin-bottom: 11px;
+            margin-bottom: calc(11rem / 16);
         }        
     }
 
     &__enter-title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #3b3b3b; 
-        margin-bottom: 25px;
+        margin-bottom: calc(25rem / 16);
         letter-spacing: -1px;
     } 
 
     &__enter-email, &__enter-password {
-        width: 299px;
-        height: 40px;
+        width: 93%;        
+        padding: 0.7rem 0 0.7rem 1rem;
         background-color: #fff;
         border: 1px solid #d2d2d2;
-        margin-bottom: 16px;
-        padding-left: 1rem;
+        margin-bottom: calc(18rem / 16);       
 
         &:active, &:focus {
             border: 1px solid #d2d2d2 !important; 
         }
 
         &:placeholder {
-            font-size: 14px;
+            font-size: calc(14rem / 16);
             color: #9c9c9c;
         }
     }
     
     &__enter-password {
-        margin-bottom: 26px;
+        margin-bottom: calc(28rem / 16);
     }
 
     &__enter-remember {
-        margin-bottom: 26px;
+        margin-bottom: calc(27rem / 16);
+        margin-right: calc(10rem / 16);
     }    
 
     &__enter-link {
-        font-size: 14px;
+        font-size: calc(14rem / 16);
         text-decoration: underline;
         color: #3d3d3d;        
-        margin-right: 18px;
+        margin-right: calc(18rem / 16);
 
         &:hover {
             text-decoration: none;
@@ -78,11 +90,10 @@
     
 
     &__enter-btn {
-        margin-top: 26px;
-        width: 210px;
-        height: 50px;
+        margin-top: calc(26rem / 16);
+        padding: 1rem 1.5rem;
         background-color: #afb9c6;
-        font-size: 14px;
+        font-size: calc(14rem / 16);
         color: #fff;
 
         &:hover {
@@ -93,24 +104,20 @@
     &__enter-social {
         position: relative;
         display: flex;
-        flex-direction: column;
-        width: 50%;
-        border-left: 1px solid #dbdbdb;
-        margin-top: 31px;
-        margin-left: 16px;
-        height: 85%;
+        flex-direction: column;        
+        width: calc(50% - 4.7rem);
+        padding: 2.3rem 2rem 2rem 2.7rem;                
     }
 
     &__enter-social-title {
-        font-size: 24px;
+        font-size: calc(24rem / 16);
         font-weight: 700;
         color: #3b3b3b;
-        margin-left: 35px;
+        margin-bottom: calc(45rem / 16);        
     }
 
     &__enter-facebook {
-        background-color: #3b5998;
-        margin-top: 46px;
+        background-color: #3b5998;        
     }
 
     &__enter-twitter {
@@ -123,13 +130,11 @@
 
     &__enter-facebook,
     &__enter-twitter,
-    &__enter-google {        
-        margin-left: 40px;
-        margin-bottom: 23px;
-        width: 293px;
-        height: 50px;
-        font-size: 14px;
+    &__enter-google { 
+        padding: 1rem 1.5rem;
+        font-size: calc(14rem / 16);
         color: #fff;
+        margin-bottom: calc(25rem / 16);
         
         i {
             margin-right: 15px;
@@ -139,7 +144,7 @@
     &__enter-close {
         position: absolute;
         right: -46px;
-        top: -76px;
+        top: -40px;
         width: 32px;
         height: 32px;
         opacity: 1;

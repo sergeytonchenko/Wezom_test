@@ -7,6 +7,11 @@
         padding-left: 5px;        
     }
 
+    .popup1 {
+        top: 15%;
+        left: 12%;
+    }
+
     .header {
         padding: 2rem 1rem;
 
@@ -117,6 +122,21 @@
 
         &__actions {
             order: 2;                   
+        }
+    }
+
+    .popup1 {
+        top: 10%;
+        left: 0;
+        width: 100%;
+
+        &__enter-close {            
+            right: 7px;
+            top: 10px;            
+    
+            &:before, &:after {            
+            background-color: #ccc;
+            }
         }
     }
 
@@ -277,6 +297,50 @@
 
     .nav__menu {
         display: none;        
+    }
+
+    .popup1 {
+        flex-wrap: wrap;
+
+        &__enter, &__enter-social {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        &__enter-title {            
+            margin-bottom: 1rem;            
+        }
+
+        &__enter-email, &__enter-password {            
+            margin-bottom: calc(14rem / 16) !important;
+        }
+
+        &__enter-remember {
+            margin-bottom: 1rem !important;            
+        }
+
+        &__enter-btn {
+            width: 100%;
+            margin-top: 1rem !important;
+        }
+
+        &__enter-social {
+            padding: 0 1rem !important;
+        }
+
+        &__enter-social-title {
+            display: none;
+        }
+
+        &__enter-facebook,
+        &__enter-twitter,
+        &__enter-google {
+            margin-bottom: 1rem !important;
+        }
+
+        &__enter-close {            
+            top: -305px !important;
+        }
     }
 
     .header {

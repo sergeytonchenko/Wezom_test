@@ -5,11 +5,7 @@
     &_wrapper {
         width: 100%;
     }
-
-    &__burger {
-        display: none;
-    }
-
+    
     &__nav { 
         @include clear-list;       
         display: flex;

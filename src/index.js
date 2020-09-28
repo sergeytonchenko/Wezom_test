@@ -183,11 +183,11 @@ for (let t = 0; t < btnBasket.length; t++) {
     btnBasket[t].addEventListener("click" , (e) => {
         
         if (e.target.value === "В корзине") {            
-            basketDigit.innerText = `${ count2 - 1 }`;
+            basketDigit.innerText = `${ count3 - 1 }`;
         } else {
             e.target.value = "В корзине";
             basketBlock.style.display = "block";
-            basketDigit.innerText = `${ count2++ }`; 
+            basketDigit.innerText = `${ count3++ }`; 
         } 
     })         
 }

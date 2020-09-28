@@ -36,6 +36,10 @@ select, select:active, select:focus {
     outline: none;    
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 select {
     appearance:none;    
 }

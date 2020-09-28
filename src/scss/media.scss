@@ -275,6 +275,7 @@
             width: 15%;
             background-color: #db7200;
             justify-content: center;
+            cursor: pointer;
 
             object {
                 transform: scale(1.2);;
@@ -408,8 +409,7 @@
                 background-color: #ccc;
                 }
         }
-    }
-    
+    } 
 
     .search__select {
         display: none;

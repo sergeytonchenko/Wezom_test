@@ -71,6 +71,11 @@
         &__pictogram {
             margin-right: 3rem;
         }
+
+        &__btn-wrapper object {            
+            top: 26px;
+            left: 24%                       
+        }
     }
 
     .footer { 
@@ -192,6 +197,11 @@
         &__pictogram {
             margin-right: 5rem;
         }
+
+        &__btn-wrapper object {            
+            top: 26px;
+            left: 27%                       
+        }
     }
 
     footer {
@@ -280,8 +290,15 @@
         font-size: 1.2rem;
     }
 
+    .product__btn-wrapper object {            
+        top: 26px;
+        left: 24%;                       
+    }
+
     .product__pictogram {
         margin-right: 3rem;
+
+        
     }
 
     .footer {
@@ -490,8 +507,12 @@
             font-size: 0.9rem;            
         }
 
-        &__btn {            
-            padding: 0.8rem 3.5rem;
+        &__btn {
+            width: 60vw;
+        }
+
+        &__btn-wrapper object {            
+            left: 25vw !important;                       
         }
     }
 

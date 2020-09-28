@@ -142,12 +142,16 @@ inputPrice.oninput = () => {
 //Функции Корзина, Сравнение и Избранное
 const btnWish = document.querySelectorAll(".btn-wish");
 const btnCompare = document.querySelectorAll(".btn-compare");
+const btnBasket = document.querySelectorAll(".product__btn");
 const compareDigit = document.getElementById("compare-number");
 const compareBlock = document.querySelector(".header__action-digit-compare");
 const wishDigit = document.getElementById("wish-number");
 const wishBlock = document.querySelector(".header__action-digit-wish");
+const basketDigit = document.getElementById("basket-number");
+const basketBlock = document.querySelector(".header__action-digit-basket");
 let count1 = 1;
 let count2 = 1;
+let count3 = 1;
 
 for (let t = 0; t < btnWish.length; t++) {
     btnWish[t].addEventListener("click" , (e) => { 
@@ -171,6 +175,19 @@ for (let t = 0; t < btnCompare.length; t++) {
             e.target.innerHTML = "В сравнении";
             compareBlock.style.display = "block";
             compareDigit.innerText = `${ count2++ }`; 
+        } 
+    })         
+}
+
+for (let t = 0; t < btnBasket.length; t++) {
+    btnBasket[t].addEventListener("click" , (e) => {
+        
+        if (e.target.value === "В корзине") {            
+            basketDigit.innerText = `${ count2 - 1 }`;
+        } else {
+            e.target.value = "В корзине";
+            basketBlock.style.display = "block";
+            basketDigit.innerText = `${ count2++ }`; 
         } 
     })         
 }

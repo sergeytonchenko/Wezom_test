@@ -32,6 +32,10 @@
             padding: 1rem;
         }
     }
+
+    &__list-select {
+        display: none;
+    }
     
     &__list {
         @include clear-list;
